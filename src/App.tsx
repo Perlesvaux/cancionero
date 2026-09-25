@@ -11,23 +11,18 @@ export default function App() {
   {
     items.map(({nombre, letra}, cancionIndex)=> 
 
-              <section key={cancionIndex}>
-
-              <h2>{nombre}</h2>
-              <article>
-              {
-                letra.map((estrofa)=> 
-                          estrofa.map((linea, lineaIndex)=>
-                                      <p key={lineaIndex}>
-                                      {linea}
-
-                                      </p>)
-                         )
-              }
-
-              </article>
-
-              </section>
+<article key={cancionIndex}>
+  <h2>{nombre}</h2>
+  <section>
+    {letra.map((estrofa, i) => (
+      <p key={i} className="estrofa">
+        {estrofa.map((linea, j) => (
+          <span key={j} className="linea">{linea}</span>
+        ))}
+      </p>
+    ))}
+  </section>
+</article>
              )
   }
 
