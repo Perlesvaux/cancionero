@@ -1,8 +1,10 @@
 // src/App.tsx
 import './App.css'
-import { items } from './constants'
+import {canciones} from './constants'
 import {CancionContext} from './hooks'
 import {Indice, ListaDeCanciones} from './components'
+
+import {useState} from 'react'
 
 const slugify = (s: string) =>
   s
@@ -13,8 +15,14 @@ const slugify = (s: string) =>
     .replace(/^-|-$/g, '')
 
 export default function App() {
+
+  const [items, setItems] = useState(canciones)
+
+  if (!items) return <> Por favor espere ... </>
+
   return (
-    <CancionContext.Provider value={{items, slugify}}>
+    <CancionContext.Provider value={{items, slugify, setItems}}>
+
       <Indice />
       <ListaDeCanciones />
 

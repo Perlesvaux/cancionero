@@ -36,6 +36,27 @@ export const pescador_de_hombres:Cancion = {
       'amigo bueno, que así me llamas.',
     ]
 
-  ]
+  ],
+
+
+  resumen:[
+
+    [
+      'Tú has venido a la orilla,',
+      'no has buscado ni a sabios ni a ricos,',
+      'tan solo quieres que yo te siga.',
+    ],
+
+    [
+      'Señor, me has mirado a los ojos.',
+      'Sonriendo has dicho mi nombre.',
+      'En la arena he dejado mi barca;',
+      'junto a Ti buscaré otro mar.',
+    ],
+
+  ],
+
+  isShort: false
+
 }
 

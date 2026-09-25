@@ -6,6 +6,7 @@ import { createContext, useContext,
 export const CancionContext = createContext<CancionContextType>({
   items: [],
   slugify: () => '',
+  setItems:()=> ''
 })
 
 export function useCancionContext () {

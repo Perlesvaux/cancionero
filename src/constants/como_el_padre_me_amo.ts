@@ -48,7 +48,35 @@ export const como_el_padre_me_amo:Cancion = {
       ' de amar como Él me amó.',
     ],
 
-  ]
+  ],
+
+  resumen:[
+
+    [
+      ' Si guardáis mis palabras',
+      ' y como hermanos os amáis,',
+      ' compartiréis con alegría',
+      ' el don de la fraternidad.',
+    ],
+
+    [
+      '   Si os ponéis en camino,',
+      ' sirviendo siempre a la verdad,',
+      ' fruto daréis en abundancia;',
+      ' mi amor se manifestará.',
+    ],
+
+    [
+      'Como el Padre me amó,',
+      'yo os he amado.',
+      '  Permaneced en mi amor,',
+      'permaneced en mi amor. (bis)',
+    ],
+
+  ],
+
+  isShort: false
+
 
 }
 
