@@ -1,6 +1,8 @@
 // src/App.tsx
 import './App.css'
 import { items } from './constants'
+import {CancionContext} from './hooks'
+import {Indice, ListaDeCanciones} from './components'
 
 const slugify = (s: string) =>
   s
@@ -12,32 +14,24 @@ const slugify = (s: string) =>
 
 export default function App() {
   return (
-    <>
-      <nav className="toc" aria-label="Índice de canciones">
-        <h2 className="toc__title">Índice</h2>
-        <ol className="toc__list">
-          {items.map(({ nombre }) => (
-            <li key={nombre}>
-              <a href={`#${slugify(nombre)}`}>{nombre}</a>
-            </li>
-          ))}
-        </ol>
-      </nav>
+    <CancionContext.Provider value={{items, slugify}}>
+      <Indice />
+      <ListaDeCanciones />
 
-      {items.map(({ nombre, letra }) => (
-        <article key={nombre} id={slugify(nombre)}>
-          <h2>{nombre}</h2>
-          <section>
-            {letra.map((estrofa, i) => (
-              <p key={i} className="estrofa">
-                {estrofa.map((linea, j) => (
-                  <span key={j} className="linea">{linea}</span>
-                ))}
-              </p>
-            ))}
-          </section>
-        </article>
-      ))}
-    </>
+    </CancionContext.Provider>
   )
 }
+
+
+
+
+      //<nav className="toc" aria-label="Índice de canciones">
+      //  <h2 className="toc__title">Índice</h2>
+      //  <ol className="toc__list">
+      //    {items.map(({ nombre }) => (
+      //      <li key={nombre}>
+      //        <a href={`#${slugify(nombre)}`}>{nombre}</a>
+      //      </li>
+      //    ))}
+      //  </ol>
+      //</nav>
