@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/cancionero/',  
+  base:'/',  
 
 plugins: [react(),
 
@@ -18,27 +18,29 @@ VitePWA({
       includeAssets: [], // Add static (./public) assets. i.e.: 'vite.svg'
       devOptions:{enabled:true},
       manifest: {
-        name: 'testing',
-        short_name:  'ReactPWA',
+        lang: 'es',
+        display:'standalone',
+        name: 'Parroquia San Francisco de Asís | Pastoral de la Salud - Cancionero',
+        short_name:  'Cancionero',
         description: 'A simple React PWA built with Vite',
         theme_color: '#ffffff',
         icons: [
             {
-              'src': 'favicon.png',
+              'src': '/favicon.png',
               'sizes': '192x192',
               'type': 'image/png'
             }],
-        start_url: '/cancionero/',
+        start_url: '/',
         screenshots: [
         {
-          src: 'screenshot-narrow.png',
+          src: '/screenshot-narrow.png',
           sizes: '320x320',
           type: 'image/png',
           form_factor: 'narrow',
           label: 'Narrow'
         },
         {
-          src: 'screenshot-wide.png',
+          src: '/screenshot-wide.png',
           sizes: '320x320',
           type: 'image/png',
           form_factor: 'wide',
@@ -47,6 +49,9 @@ VitePWA({
         ],
       },
 
-    })],
+    })
+
+
+],
   
 })
