@@ -1,7 +1,52 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' 
 
-// https://vite.dev/config/
+import { VitePWA } from 'vite-plugin-pwa'
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  base:'/cancionero/',  
+
+plugins: [react(),
+
+VitePWA({
+  //you MUST have these three in your './public' directory:
+  //favicon.png, screenshot-wide.png, screenshot-narrow.png
+  //Make sure dimensions are correct. Wrong dimensions may
+  //trigger bug that requires you to delete browser history
+      registerType: 'autoUpdate',
+      includeAssets: [], // Add static (./public) assets. i.e.: 'vite.svg'
+      devOptions:{enabled:true},
+      manifest: {
+        name: 'testing',
+        short_name:  'ReactPWA',
+        description: 'A simple React PWA built with Vite',
+        theme_color: '#ffffff',
+        icons: [
+            {
+              'src': 'favicon.png',
+              'sizes': '192x192',
+              'type': 'image/png'
+            }],
+        start_url: '/cancionero/',
+        screenshots: [
+        {
+          src: 'screenshot-narrow.png',
+          sizes: '320x320',
+          type: 'image/png',
+          form_factor: 'narrow',
+          label: 'Narrow'
+        },
+        {
+          src: 'screenshot-wide.png',
+          sizes: '320x320',
+          type: 'image/png',
+          form_factor: 'wide',
+          label: 'Wide'
+        }
+        ],
+      },
+
+    })],
+  
 })
