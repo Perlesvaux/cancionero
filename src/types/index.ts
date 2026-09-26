@@ -9,12 +9,20 @@ export interface Cancion {
   isShort: boolean,
 }
 
+type PlayerContextType = {
+  playingId: string | null
+  toggle: (id: string, src: string) => void
+}
+
 export type CancionContextType = {
   items: Cancion[]
   slugify: (s: string) => string
-  setItems: Dispatch<SetStateAction<Cancion[]>>
+  setItems: Dispatch<SetStateAction<Cancion[]>>,
+  player: PlayerContextType
 }
 
 export interface LetraProps {
   letra:Estrofa[],
 } 
+
+

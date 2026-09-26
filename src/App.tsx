@@ -1,7 +1,7 @@
 // src/App.tsx
 import './App.css'
 import {canciones} from './constants'
-import {CancionContext} from './hooks'
+import {CancionContext, useAudioPlayer } from './hooks'
 import {Indice, ListaDeCanciones} from './components'
 
 import {useState} from 'react'
@@ -17,11 +17,12 @@ const slugify = (s: string) =>
 export default function App() {
 
   const [items, setItems] = useState(canciones)
+  const player = useAudioPlayer()
 
   if (!items) return <> Por favor espere ... </>
 
   return (
-    <CancionContext.Provider value={{items, slugify, setItems}}>
+    <CancionContext.Provider value={{items, slugify, setItems, player}}>
 
       <Indice />
       <ListaDeCanciones />
