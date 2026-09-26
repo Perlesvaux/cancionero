@@ -1,4 +1,5 @@
 import {useCancionContext} from '../hooks'
+import { Letra } from './Letra'
 
 export function ListaDeCanciones(){
 
@@ -15,39 +16,16 @@ const flip = (i: number) => {
       return <>{items.map(({ nombre, letra, resumen, isShort }, index) => (
         <article key={nombre} id={slugify(nombre)}>
           <button onClick={()=>flip(index)}> Entera </button>
+          <button onClick={()=>flip(index)}> Entera </button>
           <h2>{nombre}</h2>
           <section>
           {
 
             isShort
               ?
-            <>
-
-            {letra.map((estrofa, i) => (
-              <p key={i} className="estrofa">
-                {estrofa.map((linea, j) => (
-                  <span key={j} className="linea">{linea}</span>
-                ))}
-              </p>
-            ))}
-
-
-              </>
+              <Letra letra={letra}/>
               :
-                <>
-
-
-            {resumen.map((estrofa, i) => (
-              <p key={i} className="estrofa">
-                {estrofa.map((linea, j) => (
-                  <span key={j} className="linea">{linea}</span>
-                ))}
-              </p>
-            ))}
-
-
-
-              </>
+              <Letra letra={resumen} />
 
           }
           </section>

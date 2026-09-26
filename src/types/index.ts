@@ -15,3 +15,6 @@ export type CancionContextType = {
   setItems: Dispatch<SetStateAction<Cancion[]>>
 }
 
+export interface LetraProps {
+  letra:Estrofa[],
+} 
