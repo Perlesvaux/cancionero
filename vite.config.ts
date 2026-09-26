@@ -16,6 +16,11 @@ VitePWA({
   //trigger bug that requires you to delete browser history
       registerType: 'autoUpdate',
       includeAssets: [], // Add static (./public) assets. i.e.: 'vite.svg'
+      workbox: {
+        globPatterns: [
+          '**/*.{js,css,html,ico,png,svg,opus}'
+        ],
+      },
       devOptions:{enabled:true},
       manifest: {
         lang: 'es',

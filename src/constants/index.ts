@@ -2,13 +2,26 @@ import type {Cancion} from '../types'
 
 import {como_el_padre_me_amo} from './como_el_padre_me_amo'
 import {pescador_de_hombres} from './pescador_de_hombres'
+import {cerca_esta_el_senor} from './cerca_esta_el_senor'
+import {dios_esta_aqui} from './dios_esta_aqui'
+import {el_senor_dios_nos_amo} from './el_senor_dios_nos_amo'
+import {santa_maria_del_amen} from './santa_maria_del_amen'
+import {estoy_pensando_en_dios} from './estoy_pensando_en_dios'
+import {el_senor_es_mi_pastor} from './el_senor_es_mi_pastor'
 
 
 
 export const canciones:Cancion[] = [
 
   como_el_padre_me_amo,
-  pescador_de_hombres
+  pescador_de_hombres,
+  cerca_esta_el_senor,
+  dios_esta_aqui,
+  el_senor_dios_nos_amo,
+  santa_maria_del_amen,
+  estoy_pensando_en_dios,
+  el_senor_es_mi_pastor,
+
 
 ]
 
