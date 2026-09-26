@@ -24,14 +24,14 @@ export const el_senor_dios_nos_amo:Cancion = {
   'El Señor Dios nos amó como nadie amó jamás.',
   'Sus paisanos le creían hijo de un trabajador.',
   'Como todos, Él también ganó el pan con su sudor,',
-  'y conoce la fatiga y el dolor.',
+  'Y conoce la fatiga y el dolor.',
 ],
 
 [
   'El Señor Dios nos amó como nadie amó jamás.',
   'Él reúne a los hombres y les da a vivir su amor.',
   'Los cristianos, todos ya, miembros de su cuerpo son,',
-  'nadie puede separarlos de su amor.',
+  'Nadie puede separarlos de su amor.',
 ]
 
   ],
@@ -43,7 +43,7 @@ export const el_senor_dios_nos_amo:Cancion = {
   'El Señor Dios nos amó como nadie amó jamás.',
   'Sus paisanos le creían hijo de un trabajador.',
   'Como todos, Él también ganó el pan con su sudor,',
-  'y conoce la fatiga y el dolor.',
+  'Y conoce la fatiga y el dolor.',
 ],
 [
   'Es mi cuerpo: tomad y comed.',

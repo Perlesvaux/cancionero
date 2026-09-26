@@ -8,44 +8,44 @@ export const como_el_padre_me_amo:Cancion = {
 
     [
       'Como el Padre me amó,',
-      'yo os he amado.',
-      '  Permaneced en mi amor,',
-      'permaneced en mi amor. (bis)',
+      'Yo os he amado.',
+      'Permaneced en mi amor,',
+      'Permaneced en mi amor. (bis)',
     ],
 
     [
-      ' Como el Padre me amó,',
-      ' yo os he amado.',
-      '   Permaneced en mi amor,',
-      ' permaneced en mi amor. (bis)',
+      'Como el Padre me amó,',
+      'Yo os he amado.',
+      'Permaneced en mi amor,',
+      'Permaneced en mi amor. (bis)',
     ],
 
     [
-      ' Si guardáis mis palabras',
-      ' y como hermanos os amáis,',
-      ' compartiréis con alegría',
-      ' el don de la fraternidad.',
+      'Si guardáis mis palabras',
+      'Y como hermanos os amáis,',
+      'Compartiréis con alegría',
+      'El don de la fraternidad.',
     ],
 
     [
-      '   Si os ponéis en camino,',
-      ' sirviendo siempre a la verdad,',
-      ' fruto daréis en abundancia;',
-      ' mi amor se manifestará.',
+      'Si os ponéis en camino,',
+      'Sirviendo siempre a la verdad,',
+      'Fruto daréis en abundancia;',
+      'Mi amor se manifestará.',
     ],
 
     [
-      '   No veréis amor tan grande',
-      ' como aquel que os mostró.',
-      '   Yo doy la vida por vosotros,',
-      ' amad como yo os amé.',
+      'No veréis amor tan grande',
+      'Como aquel que os mostró.',
+      'Yo doy la vida por vosotros,',
+      'Amad como yo os amé.',
     ],
 
     [
-      '   Si hacéis lo que os mando',
-      ' y os queréis de corazón,',
-      ' compartiréis mi pleno gozo',
-      ' de amar como Él me amó.',
+      'Si hacéis lo que os mando',
+      'Y os queréis de corazón,',
+      'Compartiréis mi pleno gozo',
+      'De amar como Él me amó.',
     ],
 
   ],
@@ -53,24 +53,24 @@ export const como_el_padre_me_amo:Cancion = {
   resumen:[
 
     [
-      ' Si guardáis mis palabras',
-      ' y como hermanos os amáis,',
-      ' compartiréis con alegría',
-      ' el don de la fraternidad.',
+      'Si guardáis mis palabras',
+      'Y como hermanos os amáis,',
+      'Compartiréis con alegría',
+      'El don de la fraternidad.',
     ],
 
     [
-      '   Si os ponéis en camino,',
-      ' sirviendo siempre a la verdad,',
-      ' fruto daréis en abundancia;',
-      ' mi amor se manifestará.',
+      'Si os ponéis en camino,',
+      'Sirviendo siempre a la verdad,',
+      'Fruto daréis en abundancia;',
+      'Mi amor se manifestará.',
     ],
 
     [
       'Como el Padre me amó,',
-      'yo os he amado.',
-      '  Permaneced en mi amor,',
-      'permaneced en mi amor. (bis)',
+      'Yo os he amado.',
+      'Permaneced en mi amor,',
+      'Permaneced en mi amor. (bis)',
     ],
 
   ],

@@ -7,22 +7,22 @@ export const dios_esta_aqui:Cancion = {
 
     [
       'Dios está aquí:',
-      'tan cierto como el aire que respiro,',
-      'tan cierto como la mañana se levanta,',
-      'tan cierto como que mi canto lo puedes oír.',
+      'Tan cierto como el aire que respiro,',
+      'Tan cierto como la mañana se levanta,',
+      'Tan cierto como que mi canto lo puedes oír.',
     ],
 
     [
       'Lo puedes sentir, moviéndose entre los que aman,',
-      'lo puedes oír cantando con nosotros aquí.',
+      'Lo puedes oír cantando con nosotros aquí.',
       'Lo puedes llevar cuando por esa puerta salgas,',
-      'lo puedes guardar muy dentro de tu corazón.',
+      'Lo puedes guardar muy dentro de tu corazón.',
     ],
 
     [
       'Lo puedes notar junto a ti en cualquier momento;',
-      'le puedes hablar de esa vida que le quieres dar;',
-      'no temas ya más, Él es Dios y nos perdona a todos;',
+      'Le puedes hablar de esa vida que le quieres dar;',
+      'No temas ya más, Él es Dios y nos perdona a todos;',
       'Jesús está aquí, si tú quieres, le puedes seguir.',
     ]
 
@@ -33,9 +33,9 @@ export const dios_esta_aqui:Cancion = {
 
     [
       'Dios está aquí:',
-      'tan cierto como el aire que respiro,',
-      'tan cierto como la mañana se levanta,',
-      'tan cierto que cuando le hablo El me puede oír.',
+      'Tan cierto como el aire que respiro,',
+      'Tan cierto como la mañana se levanta,',
+      'Tan cierto que cuando le hablo El me puede oír.',
     ],
     [
       'Dios está aquí:',
@@ -45,9 +45,9 @@ export const dios_esta_aqui:Cancion = {
     ],
     [
       'Dios está aquí:',
-      'tan cierto como el aire que respiro,',
-      'tan cierto como la mañana se levanta,',
-      'tan cierto que cuando le hablo El me puede oír. (x3)',
+      'Tan cierto como el aire que respiro,',
+      'Tan cierto como la mañana se levanta,',
+      'Tan cierto que cuando le hablo El me puede oír. (x3)',
     ],
 
   ],

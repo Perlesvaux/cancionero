@@ -8,31 +8,28 @@ export const con_nosotros_esta:Cancion = {
 
 [
   'Su nombre es el Señor y pasa hambre',
-  'y clama por la boca del hambriento',
-  'y muchos que lo ven pasan de largo,',
-  'al paso por llegar temprano al templo.',
+  'Y clama por la boca del hambriento',
+  'Y muchos que lo ven pasan de largo,',
+  'Al paso por llegar temprano al templo.',
   'Su nombre es el Señor, un ser supremo',
-  'y está en quien de justicia va sediento',
-  'y muchos que lo ven pasan de largo,',
-  'a veces ocupados en sus rezos.',
+  'Y está en quien de justicia va sediento',
+  'Y muchos que lo ven pasan de largo,',
+  'A veces ocupados en sus rezos.',
 ],
 
 [
-  '(CORO)',
-  'Con nosotros está y no le conoceis,',
-  'con nosotros está, su nombre es el Señor (x2)',
+  '(CORO) Con nosotros está y no le conoceis, con nosotros está, su nombre es el Señor (x2)',
 ],
 
 [
   'Su nombre es el Señor y está desnudo,',
-  'la ausencia del amor hiela sus huesos',
-  'y muchos que lo ven pasan de largo,',
-  'seguros y al calor de su dinero.',
+  'La ausencia del amor hiela sus huesos',
+  'Y muchos que lo ven pasan de largo,',
+  'Seguros y al calor de su dinero.',
   'Su nombre es el Señor y enfermo vive,',
-  'su agonía es la del enfermo',
-  'y muchos que lo saben no hacen caso,',
-  'tal vez no frecuentaba mucho el templo.',
-  '*CORO*',
+  'Su agonía es la del enfermo',
+  'Y muchos que lo saben no hacen caso,',
+  'Tal vez no frecuentaba mucho el templo. *CORO*',
 ],
 
 [
@@ -54,23 +51,17 @@ export const con_nosotros_esta:Cancion = {
 
 [
   'Su nombre es el Señor y pasa hambre',
-  'y clama por la boca del hambriento',
-  'y muchos que lo ven pasan de largo,',
-  'al paso por llegar temprano al templo.',
+  'Y clama por la boca del hambriento',
+  'Y muchos que lo ven pasan de largo,',
+  'Al paso por llegar temprano al templo.',
   'Su nombre es el Señor, un ser supremo',
-  'y está en quien de justicia va sediento',
-  'y muchos que lo ven pasan de largo,',
-  'a veces ocupados en sus rezos.',
+  'Y está en quien de justicia va sediento',
+  'Y muchos que lo ven pasan de largo,',
+  'A veces ocupados en sus rezos.',
 ],
 
 [
-  'Con nosotros está y no le conoceis,',
-  'con nosotros está, su nombre es el Señor',
-],
-
-[
-  'Con nosotros está y no le conoceis,',
-  'con nosotros está, su nombre es el Señor',
+  '(CORO) Con nosotros está y no le conoceis, con nosotros está, su nombre es el Señor (x2)',
 ],
 
   ],

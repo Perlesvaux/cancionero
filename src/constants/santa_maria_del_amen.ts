@@ -5,28 +5,27 @@ export const santa_maria_del_amen:Cancion = {
   nombre: "Santa Maria del Amen",
   letra: [
   [
-    'MADRE DE TODOS LOS HOMBRES',
-    'ENSÉÑANOS A DECIR AMÉN.',
+    '(CORO) MADRE DE TODOS LOS HOMBRES ENSÉÑANOS A DECIR AMÉN.',
   ],
 
   [
     'Cuando la noche se acerca',
-    'y se oscurece la fe.',
+    'Y se oscurece la fe. *CORO*',
   ],
 
   [
     'Cuando el dolor nos oprime',
-    'y la ilusión ya no brilla.',
+    'Y la ilusión ya no brilla. *CORO*',
   ],
 
   [
     'Cuando aparece la Luz',
-    'y nos sentimos felices.',
+    'Y nos sentimos felices. *CORO*',
   ],
 
   [
     'Cuando nos llegue la muerte',
-    'y tú nos lleves al cielo.',
+    'Y tú nos lleves al cielo. *CORO*',
   ]
 ]
 ,
@@ -40,22 +39,22 @@ export const santa_maria_del_amen:Cancion = {
 
   [
     'Cuando la noche se acerca',
-    'y se oscurece la fe. *CORO*',
+    'Y se oscurece la fe. *CORO*',
   ],
 
   [
     'Cuando el dolor nos oprime',
-    'y la ilusión ya no brilla. *CORO*',
+    'Y la ilusión ya no brilla. *CORO*',
   ],
 
   [
     'Cuando aparece la Luz',
-    'y nos sentimos felices. *CORO*',
+    'Y nos sentimos felices. *CORO*',
   ],
 
   [
     'Cuando nos llegue la muerte',
-    'y tú nos lleves al cielo. *CORO*',
+    'Y tú nos lleves al cielo. *CORO*',
   ]
 
   ],
