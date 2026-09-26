@@ -6,7 +6,6 @@ export function Pista({ nombre }: { nombre: string }) {
   const isPlaying = player.playingId === nombre
 
   return (
-    <div>
       <button
         onClick={() => player.toggle(nombre, `/${nombre}.opus`)}
         aria-pressed={isPlaying}
@@ -14,7 +13,5 @@ export function Pista({ nombre }: { nombre: string }) {
       >
         {isPlaying ? '⏸' : '▶'}
       </button>
-      <h3>{nombre}</h3>
-    </div>
   )
 }

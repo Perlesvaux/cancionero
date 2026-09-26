@@ -16,8 +16,13 @@ const flip = (i: number) => {
 
       return <>{items.map(({ nombre, letra, resumen, isShort }, index) => (
         <article key={nombre} id={slugify(nombre)}>
-          <button onClick={()=>flip(index)}> Entera </button>
-          <Pista nombre={nombre}/>
+  <div className="song-controls">
+    <button onClick={() => flip(index)}>
+      {isShort ? 'Entera' : 'Resumen'}
+    </button>
+
+    <Pista nombre={nombre} />
+  </div>
           <h2>{nombre}</h2>
           <section>
           {
