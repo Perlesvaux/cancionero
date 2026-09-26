@@ -8,7 +8,8 @@ import {el_senor_dios_nos_amo} from './el_senor_dios_nos_amo'
 import {santa_maria_del_amen} from './santa_maria_del_amen'
 import {estoy_pensando_en_dios} from './estoy_pensando_en_dios'
 import {el_senor_es_mi_pastor} from './el_senor_es_mi_pastor'
-
+import {santa_maria_del_camino} from './santa_maria_del_camino'
+import {con_nosotros_esta} from './con_nosotros_esta'
 
 
 export const canciones:Cancion[] = [
@@ -21,7 +22,8 @@ export const canciones:Cancion[] = [
   santa_maria_del_amen,
   estoy_pensando_en_dios,
   el_senor_es_mi_pastor,
-
+  santa_maria_del_camino,
+  con_nosotros_esta,
 
 ]
 
