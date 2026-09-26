@@ -35,33 +35,27 @@ export const santa_maria_del_amen:Cancion = {
   resumen:[
 
   [
-    '(CORO)',
-    'MADRE DE TODOS LOS HOMBRES',
-    'ENSÉÑANOS A DECIR AMÉN.',
+    '(CORO) MADRE DE TODOS LOS HOMBRES ENSÉÑANOS A DECIR AMÉN.',
   ],
 
   [
     'Cuando la noche se acerca',
-    'y se oscurece la fe.',
-    '*CORO*'
+    'y se oscurece la fe. *CORO*',
   ],
 
   [
     'Cuando el dolor nos oprime',
-    'y la ilusión ya no brilla.',
-    '*CORO*'
+    'y la ilusión ya no brilla. *CORO*',
   ],
 
   [
     'Cuando aparece la Luz',
-    'y nos sentimos felices.',
-    '*CORO*'
+    'y nos sentimos felices. *CORO*',
   ],
 
   [
     'Cuando nos llegue la muerte',
-    'y tú nos lleves al cielo.',
-    '*CORO*'
+    'y tú nos lleves al cielo. *CORO*',
   ]
 
   ],

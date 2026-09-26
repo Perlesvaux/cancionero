@@ -4,7 +4,7 @@ export function Indice(){
 
   const {items, slugify} = useCancionContext()
 
-  return <nav className="toc" aria-label="Índice de canciones">
+  return <nav className="toc" aria-label="Índice de canciones" id="toc">
   <h2 className="toc__title">Índice</h2>
   <ol className="toc__list">
   {items.map(({ nombre }) => (
