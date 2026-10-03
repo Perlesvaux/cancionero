@@ -26,3 +26,18 @@ export interface LetraProps {
 } 
 
 
+export type RouteContextType = {
+  items: Cancion[]
+  setItems: Dispatch<SetStateAction<Cancion[]>>,
+  player: PlayerContextType
+
+
+  
+
+
+
+
+
+
+
+}
