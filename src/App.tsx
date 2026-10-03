@@ -1,35 +1,44 @@
+// Thanks2: https://www.w3schools.com/react/react_router.asp
 // src/App.tsx
 import './App.css'
-import {canciones} from './constants'
-import {CancionContext, useAudioPlayer } from './hooks'
-import {Indice, ListaDeCanciones} from './components'
 
-import {useState} from 'react'
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { Canciones } from './routes'
 
-const slugify = (s: string) =>
-  s
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')   // strip accents
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '')
 
 export default function App() {
-
-  const [items, setItems] = useState(canciones)
-  const player = useAudioPlayer()
-
-  if (!items) return <> Por favor espere ... </>
-
   return (
-    <CancionContext.Provider value={{items, slugify, setItems, player}}>
+    <BrowserRouter>
+      {/* Navigation */}
+      <nav>
+        <Link to="/">Canciones</Link>
+        <Link to="/oraciones">Oraciones</Link> 
+        <Link to="/lecturas">Lecturas</Link>
+      </nav>
 
-      <Indice />
-      <ListaDeCanciones />
-
-    </CancionContext.Provider>
-  )
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Canciones />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+
+
+
+
+
+
+
+
+        //<Route path="/products" element={<Products />}>
+        //  <Route path="car" element={<CarProducts />} />
+        //  <Route path="bike" element={<BikeProducts />} />
+        //</Route>
+        //<Route path="/contact" element={<Contact />} />
+
+
 
 
 
