@@ -2,23 +2,46 @@
 // src/App.tsx
 import './App.css'
 
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
-import { Canciones } from './routes'
+//import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Canciones, Oraciones } from './routes'
 
+
+//export default function App() {
+//  return (
+//    <BrowserRouter>
+//      {/* Navigation */}
+//      <nav>
+//        <Link to="/">Canciones</Link>
+//        <Link to="/oraciones">Oraciones</Link> 
+//        <Link to="/lecturas">Lecturas</Link>
+//      </nav>
+//
+//      {/* Routes */}
+//      <Routes>
+//        <Route path="/" element={<Canciones />} />
+//        <Route path="/oraciones" element={<Oraciones />} />
+//      </Routes>
+//    </BrowserRouter>
+//  );
+//}
+
+
+
+
+import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Navigation */}
       <nav>
-        <Link to="/">Canciones</Link>
-        <Link to="/oraciones">Oraciones</Link> 
-        <Link to="/lecturas">Lecturas</Link>
+        <NavLink to="/">Canciones</NavLink>
+        <NavLink to="/oraciones">Oraciones</NavLink>
+        <NavLink to="/lecturas">Lecturas</NavLink>
       </nav>
 
-      {/* Routes */}
       <Routes>
         <Route path="/" element={<Canciones />} />
+        <Route path="/oraciones" element={<Oraciones />} />
       </Routes>
     </BrowserRouter>
   );
@@ -26,10 +49,7 @@ export default function App() {
 
 
 
-
-
-
-
+        //<Route path="/lecturas" element={<Lecturas />} />
 
 
         //<Route path="/products" element={<Products />}>

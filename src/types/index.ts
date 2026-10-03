@@ -16,7 +16,7 @@ type PlayerContextType = {
 
 export type CancionContextType = {
   items: Cancion[]
-  slugify: (s: string) => string
+  //slugify: (s: string) => string
   setItems: Dispatch<SetStateAction<Cancion[]>>,
   player: PlayerContextType
 }
@@ -40,4 +40,26 @@ export type RouteContextType = {
 
 
 
+}
+
+
+
+
+export interface IndiceProps {
+  items: IndiceItems
+}
+
+
+type IndiceItems = Cancion[] | Oracion[]
+
+
+
+export interface Oracion {
+  nombre: string,
+  cuerpo: string[],
+}
+
+
+export interface LeyendaProps {
+  cuerpo: string[]
 }

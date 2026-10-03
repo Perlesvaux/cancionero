@@ -1,9 +1,8 @@
-import {useRouteContext} from '../hooks'
+//import {useRouteContext} from '../hooks'
+import type {IndiceProps} from '../types'
 import { slugify } from '../utils'
 
-export function Indice(){
-
-  const {items} = useRouteContext()
+export function Indice({ items }:IndiceProps){
 
   return <article className="toc" aria-label="Índice" id="toc">
   <h2 className="toc__title">Índice</h2>
@@ -16,3 +15,9 @@ export function Indice(){
   </ol>
   </article>
 }
+
+
+
+//export interface LetraProps {
+//  letra:Estrofa[],
+//} 

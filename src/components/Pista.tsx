@@ -1,8 +1,8 @@
 // components/CancionRow.tsx
-import { useRouteContext } from '../hooks'
+import { useCancionContext } from '../hooks'
 
 export function Pista({ nombre }: { nombre: string }) {
-  const { player } = useRouteContext()
+  const { player } = useCancionContext()
   const isPlaying = player.playingId === nombre
 
   return (

@@ -1,6 +1,6 @@
 
 import {canciones} from '../constants'
-import {RouteContext, useAudioPlayer } from '../hooks'
+import {CancionContext, useAudioPlayer } from '../hooks'
 import {Indice, ListaDeCanciones} from '../components'
 import {useState} from 'react'
 
@@ -12,12 +12,12 @@ export function Canciones() {
   if (!items) return <> Por favor espere ... </>
 
   return (
-    <RouteContext.Provider value={{items, setItems, player}}>
+    <CancionContext.Provider value={{items, setItems, player}}>
 
-      <Indice />
+      <Indice items={items} />
       <ListaDeCanciones />
 
-    </RouteContext.Provider>
+    </CancionContext.Provider>
   )
 }
 

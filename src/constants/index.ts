@@ -1,4 +1,4 @@
-import type {Cancion} from '../types'
+import type {Cancion, Oracion} from '../types'
 
 import {como_el_padre_me_amo} from './como_el_padre_me_amo'
 import {pescador_de_hombres} from './pescador_de_hombres'
@@ -34,4 +34,13 @@ export const canciones:Cancion[] = [
 ]
 
 
+
+
+export const oraciones:Oracion[] = [
+  {
+    nombre:"Paternoster", cuerpo:['lorem', 'ipsum', 'dolor']
+  }
+
+
+]
 

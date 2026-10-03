@@ -1,4 +1,4 @@
-import {useRouteContext} from '../hooks'
+import {useCancionContext} from '../hooks'
 import { Letra } from './Letra'
 import {Pista} from './Pista'
 
@@ -6,7 +6,7 @@ import { slugify } from '../utils'
 
 export function ListaDeCanciones(){
 
-  const {items, setItems} = useRouteContext()
+  const {items, setItems} = useCancionContext()
 
 const flip = (i: number) => {
   setItems(prev =>
