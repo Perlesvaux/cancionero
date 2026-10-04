@@ -494,3 +494,33 @@ body {
     transition: none;
   }
 }
+
+
+
+
+
+
+/* ---------- Flash on target ---------- */
+
+:root{
+  --flash-color: #FAEBD7 
+}
+
+@keyframes highlight-flash {
+  0%, 20%       { background-color: var(--flash-color); }
+  10%, 60%      { background-color: transparent; }
+}
+
+:target {
+  animation: highlight-flash 3.5s ease-out;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --flash-color: #2a2923;
+  }
+}
+
+
+
