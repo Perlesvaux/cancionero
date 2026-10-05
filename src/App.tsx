@@ -3,7 +3,7 @@
 import './App.css'
 
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Canciones, Oraciones } from './routes'
+import { Canciones, Oraciones, Lecturas } from './routes'
 
 
 //export default function App() {
@@ -42,6 +42,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Canciones />} />
         <Route path="/oraciones" element={<Oraciones />} />
+        <Route path="/lecturas" element={<Lecturas />} />
       </Routes>
     </BrowserRouter>
   );

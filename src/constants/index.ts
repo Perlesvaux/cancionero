@@ -1,4 +1,5 @@
 import type {Cancion, Oracion} from '../types'
+import {alfabetico} from '../utils'
 
 import {como_el_padre_me_amo} from './canciones/como_el_padre_me_amo'
 import {pescador_de_hombres} from './canciones/pescador_de_hombres'
@@ -16,7 +17,6 @@ import {hoy_he_vuelto} from './canciones/hoy_he_vuelto'
 import {nadie_te_ama_como_yo} from './canciones/nadie_te_ama_como_yo'
 
 
-const alfabetico = (a:Cancion, b:Cancion) => a.nombre.localeCompare(b.nombre, 'es')
 
 export const canciones:Cancion[] = [
 
