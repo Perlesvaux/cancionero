@@ -1,4 +1,4 @@
-import type {Cancion} from '../types'
+import type {Cancion} from '../../types'
 
 export const dios_esta_aqui:Cancion = {
 

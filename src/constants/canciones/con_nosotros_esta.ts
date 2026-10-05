@@ -1,5 +1,5 @@
 
-import type {Cancion} from '../types'
+import type {Cancion} from '../../types'
 
 export const con_nosotros_esta:Cancion = {
 

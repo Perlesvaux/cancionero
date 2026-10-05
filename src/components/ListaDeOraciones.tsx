@@ -4,7 +4,6 @@ import {Leyenda} from './Leyenda'
 
 export function ListaDeOraciones({items}:ListaDeOracionesProps){
 
-
       return <>{items.map(({ nombre, cuerpo }) => (
         <article key={nombre} id={slugify(nombre)}>
   
@@ -14,9 +13,6 @@ export function ListaDeOraciones({items}:ListaDeOracionesProps){
           </section>
         </article>
       ))}</>
-
-
-
 } 
 
 interface ListaDeOracionesProps {

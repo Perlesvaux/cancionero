@@ -3,7 +3,6 @@ import type { LetraProps } from '../types'
 
 export function Letra({letra}:LetraProps){
 
-
   return <>
   {letra.map((estrofa, i) => (
     <p key={i} className="estrofa">
@@ -12,8 +11,6 @@ export function Letra({letra}:LetraProps){
     ))}
     </p>
   ))}
-
-
   </>
 
 }
