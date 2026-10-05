@@ -4,8 +4,8 @@ type Estrofa = string[]
 
 export interface Cancion {
   nombre: string,
-  letra: Estrofa[],
-  resumen: Estrofa[],
+  letra: string,
+  resumen: string,
   isShort: boolean,
 }
 
@@ -21,25 +21,15 @@ export type CancionContextType = {
   player: PlayerContextType
 }
 
-export interface LetraProps {
-  letra:Estrofa[],
-} 
+//export interface LetraProps {
+//  letra:Estrofa[],
+//} 
 
 
 export type RouteContextType = {
   items: Cancion[]
   setItems: Dispatch<SetStateAction<Cancion[]>>,
   player: PlayerContextType
-
-
-  
-
-
-
-
-
-
-
 }
 
 
@@ -56,10 +46,10 @@ type IndiceItems = Cancion[] | Oracion[]
 
 export interface Oracion {
   nombre: string,
-  cuerpo: string[],
+  cuerpo: string,
 }
 
 
-export interface LeyendaProps {
-  cuerpo: string[]
-}
+//export interface LeyendaProps {
+//  cuerpo: string[]
+//}
