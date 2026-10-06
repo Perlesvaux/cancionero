@@ -1,4 +1,4 @@
-import type {CancionContextType, RouteContextType} from '../types'
+import type {CancionContextType} from '../types'
 
 import { createContext, useContext, 
 } from 'react'
@@ -18,21 +18,6 @@ export function useCancionContext(): CancionContextType {
   }
   return ctx
 }
-
-
-
-
-export const RouteContext = createContext<RouteContextType | null>(null)
-
-export function useRouteContext(): RouteContextType {
-  const ctx = useContext(RouteContext)
-  if (!ctx) {
-    throw new Error('useRouteContext must be used within a RouteContext.Provider')
-  }
-  return ctx
-}
-
-
 
 
 

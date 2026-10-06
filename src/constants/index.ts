@@ -41,10 +41,7 @@ export const canciones:Cancion[] = [
 
 export const oraciones:Oracion[] = [
   {
-    nombre:"Paternoster", cuerpo:`Lorem Ipsum
-    *Dolor* amen **amen**
-
-    `
+    nombre:"Paternoster", cuerpo:`***Proximamente!***`
   }
 
 

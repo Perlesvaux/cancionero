@@ -1,9 +1,11 @@
 
 //import {canciones} from '../constants'
 //import {CancionContext, useAudioPlayer } from '../hooks'
-import {Indice, Mk} from '../components'
+import {
+  //Indice,
+  Mk} from '../components'
 //import {useState} from 'react'
-import {oraciones} from '../constants'
+//import {oraciones} from '../constants'
 
 export function Lecturas() {
 
@@ -14,13 +16,7 @@ export function Lecturas() {
 
   return (
     <>
-    <Mk body={`this should be **BOLD** and this, *cursive*
-
-      this is a next line
-
-    let me  *go*
-
-    `}/>
+    <Mk body={`**Proximamente**`}/>
     </>
   )
 }

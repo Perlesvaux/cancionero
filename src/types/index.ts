@@ -1,6 +1,5 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-type Estrofa = string[] 
 
 export interface Cancion {
   nombre: string,
@@ -21,20 +20,6 @@ export type CancionContextType = {
   player: PlayerContextType
 }
 
-//export interface LetraProps {
-//  letra:Estrofa[],
-//} 
-
-
-export type RouteContextType = {
-  items: Cancion[]
-  setItems: Dispatch<SetStateAction<Cancion[]>>,
-  player: PlayerContextType
-}
-
-
-
-
 export interface IndiceProps {
   items: IndiceItems
 }
@@ -43,13 +28,8 @@ export interface IndiceProps {
 type IndiceItems = Cancion[] | Oracion[]
 
 
-
 export interface Oracion {
   nombre: string,
   cuerpo: string,
 }
 
-
-//export interface LeyendaProps {
-//  cuerpo: string[]
-//}
