@@ -119,20 +119,20 @@ article h2 {
 }
 
 /* ---------- Lines ---------- */
-.linea {
+.letra {
   display: block;
   text-align: left;
   margin-bottom: 1.4rem;
 }
 
-/*.linea::before {*/
+/*.letra::before {*/
 /*  content: "•";*/
 /*  color: var(--accent);*/
 /*  margin-right: 0.5rem;*/
 /*}*/
 
 
-.linea::first-letter {
+.letra::first-letter {
   color: var(--accent);
   font-weight: bolder;
 }
