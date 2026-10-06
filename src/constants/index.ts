@@ -15,6 +15,7 @@ import {con_nosotros_esta} from './canciones/con_nosotros_esta'
 import {oh_maria_madre_mia} from './canciones/oh_maria_madre_mia'
 import {hoy_he_vuelto} from './canciones/hoy_he_vuelto'
 import {nadie_te_ama_como_yo} from './canciones/nadie_te_ama_como_yo'
+import { oracion_por_un_enfermo } from './oraciones/oracion_por_un_enfermo'
 
 
 
@@ -40,12 +41,9 @@ export const canciones:Cancion[] = [
 
 
 export const oraciones:Oracion[] = [
-  {
-    nombre:"Paternoster", cuerpo:`***Proximamente!***`
-  }
-
-
-]
+  oracion_por_un_enfermo,
+  
+].sort(alfabetico)
 
 
 
