@@ -6,14 +6,24 @@ interface Props {
 
 export function Letra({letra}:Props){
 
-  const parrafos:string[] = letra.split('\n\n') 
+  const estrofas:string[] = letra.split('\n\n') 
+
+
+
+  return estrofas.map((stanza, index)=><>
+                      <p key={index}>{stanza.split('\n').map((line, i)=> <> 
+                             <MinimalMk key={i} className="linea" body={line} />
+                             </>)}</p>
+
+
+                      </>)
   
-  return parrafos.map((p, index)=>
-    <MinimalMk 
-      className="letra" 
-      key={index} 
-      body={p} 
-    />)
 }
 
 
+  //return parrafos.map((p, index)=>
+  //  <MinimalMk 
+  //    className="letra" 
+  //    key={index} 
+  //    body={p} 
+  //  />)

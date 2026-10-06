@@ -137,6 +137,21 @@ article h2 {
   font-weight: bolder;
 }
 
+
+.linea {
+  display: block;
+  text-align: left;
+}
+
+.linea::first-letter {
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+
+
+
 /* Optional: slightly larger gap between stanzas than between lines */
 .estrofa + .estrofa {
   margin-top: 1.4rem;
