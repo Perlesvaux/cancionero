@@ -3,9 +3,9 @@ import type {Cancion} from '../../types'
 export const santa_maria_de_la_esperanza:Cancion = {
 
   nombre: "Santa María de la Esperanza",
-  letra: `(CORO) SANTA MARÍA DE LA ESPERANZA
-  MANTÉN EL RITMO DE NUESTRA ESPERA
-  MANTÉN EL RITMO DE NUESTRA ESPERA
+  letra: `**Santa maría de la esperanza**
+  **Mantén el ritmo de nuestra espera**
+  **Mantén el ritmo de nuestra espera**
 
   Nos diste al esperado de los tiempos
   Mil veces prometido en los profetas
@@ -25,8 +25,7 @@ export const santa_maria_de_la_esperanza:Cancion = {
   Esperaste cuando todos vacilaban
   El triunfo de Jesús sobre la muerte
   Y nosotros esperamos que su vida
-  Anime nuestro mundo para siempre.
-  `
+  Anime nuestro mundo para siempre.`
 ,
 
 
@@ -35,9 +34,9 @@ export const santa_maria_de_la_esperanza:Cancion = {
   Y nosotros esperamos que su vida
   Anime nuestro mundo para siempre.
 
-  ***Santa maría de la esperanza***
-  ***Mantén el ritmo de nuestra espera***
-  ***Mantén el ritmo de nuestra espera***`
+  **Santa maría de la esperanza**
+  **Mantén el ritmo de nuestra espera**
+  **Mantén el ritmo de nuestra espera**`
 ,
 
   isShort: false

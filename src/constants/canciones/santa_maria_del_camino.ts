@@ -3,68 +3,41 @@ import type {Cancion} from '../../types'
 export const santa_maria_del_camino:Cancion = {
 
   nombre: "Santa Maria del Camino",
-  letra:[
+  letra: `Mientras recorres la vida
+  Tú nunca solo estás
+  Contigo por el camino
+  Santa María, va
 
-[
-  'Mientras recorres la vida',
-  'Tú nunca solo estás',
-  'Contigo por el camino',
-  'Santa María, va',
-],
+  **Ven con nosotros al caminar**
+  **Santa María, ven**
+  **Ven con nosotros al caminar**
+  **Santa María, ven**
 
-[
-  '(CORO)',
-  'Ven con nosotros al caminar',
-  'Santa María, ven',
-  'Ven con nosotros al caminar',
-  'Santa María, ven',
-],
+  Aunque te digan algunos
+  Que nada puede cambiar
+  Lucha por un mundo nuevo
+  Lucha por la verdad **(Coro)**
 
-[
-  'Aunque te digan algunos',
-  'Que nada puede cambiar',
-  'Lucha por un mundo nuevo',
-  'Lucha por la verdad',
-  '*CORO*',
-],
+  Si por el mundo los hombres
+  Sin conocerse van
+  No niegues nunca tu mano
+  Alguien contigo está **(Coro)**
 
-[
-  'Si por el mundo los hombres',
-  'Sin conocerse van',
-  'No niegues nunca tu mano',
-  'Alguien contigo está',
-  '*CORO*',
-],
-
-[
-  'Aunque parezcan tus pasos',
-  'Inútil caminar',
-  'Tú vas haciendo caminos',
-  'Otros los seguirán',
-  '*CORO x2*',
-],
-
-  ],
+  Aunque parezcan tus pasos
+  Inútil caminar
+  Tú vas haciendo caminos
+  Otros los seguirán **(Coro x2)**`,
 
 
-  resumen:[
+  resumen:`Mientras recorres la vida
+  Tú nunca solo estás
+  Contigo por el camino
+  Santa María, va
 
-[
-  'Mientras recorres la vida',
-  'Tú nunca solo estás',
-  'Contigo por el camino',
-  'Santa María, va',
-],
-
-[
-  'Ven con nosotros al caminar',
-  'Santa María, ven',
-  'Ven con nosotros al caminar',
-  'Santa María, ven',
-],
-
-
-  ],
+  **Ven con nosotros al caminar**
+  **Santa María, ven**
+  **Ven con nosotros al caminar**
+  **Santa María, ven**`,
 
   isShort: false
 

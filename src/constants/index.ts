@@ -20,19 +20,19 @@ import {nadie_te_ama_como_yo} from './canciones/nadie_te_ama_como_yo'
 
 export const canciones:Cancion[] = [
 
-  //como_el_padre_me_amo,
-  //pescador_de_hombres,
-  //cerca_esta_el_senor,
-  //dios_esta_aqui,
-  //el_senor_dios_nos_amo,
-  //santa_maria_del_amen,
-  //estoy_pensando_en_dios,
-  //el_senor_es_mi_pastor,
-  //santa_maria_del_camino,
-  //con_nosotros_esta,
-  //oh_maria_madre_mia,
-  //hoy_he_vuelto,
-  //nadie_te_ama_como_yo,
+  como_el_padre_me_amo,
+  pescador_de_hombres,
+  cerca_esta_el_senor,
+  dios_esta_aqui,
+  el_senor_dios_nos_amo,
+  santa_maria_del_amen,
+  estoy_pensando_en_dios,
+  el_senor_es_mi_pastor,
+  santa_maria_del_camino,
+  con_nosotros_esta,
+  oh_maria_madre_mia,
+  hoy_he_vuelto,
+  nadie_te_ama_como_yo,
   santa_maria_de_la_esperanza,
 ].sort(alfabetico)
 

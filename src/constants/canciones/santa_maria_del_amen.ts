@@ -3,61 +3,43 @@ import type {Cancion} from '../../types'
 export const santa_maria_del_amen:Cancion = {
 
   nombre: "Santa Maria del Amen",
-  letra: [
-  [
-    '(CORO) MADRE DE TODOS LOS HOMBRES ENSÉÑANOS A DECIR AMÉN.',
-  ],
+  letra: `**Madre de todos los hombres, enséñanos a decir Amén**
 
-  [
-    'Cuando la noche se acerca',
-    'Y se oscurece la fe. *CORO*',
-  ],
+    Cuando la noche se acerca
+    Y se oscurece la fe. 
 
-  [
-    'Cuando el dolor nos oprime',
-    'Y la ilusión ya no brilla. *CORO*',
-  ],
+    **Madre de todos los hombres, enséñanos a decir Amén**
 
-  [
-    'Cuando aparece la Luz',
-    'Y nos sentimos felices. *CORO*',
-  ],
+    Cuando el dolor nos oprime
+    Y la ilusión ya no brilla. 
 
-  [
-    'Cuando nos llegue la muerte',
-    'Y tú nos lleves al cielo. *CORO*',
-  ]
-]
+    **Madre de todos los hombres, enséñanos a decir Amén**
+
+    Cuando aparece la Luz
+    Y nos sentimos felices. 
+
+    **Madre de todos los hombres, enséñanos a decir Amén**
+
+    Cuando nos llegue la muerte
+    Y tú nos lleves al cielo. 
+
+    **Madre de todos los hombres, enséñanos a decir Amén**`
 ,
 
 
-  resumen:[
+  resumen: `**Madre de todos los hombres, enséñanos a decir Amén**
 
-  [
-    '(CORO) MADRE DE TODOS LOS HOMBRES ENSÉÑANOS A DECIR AMÉN.',
-  ],
+  Cuando la noche se acerca
+  Y se oscurece la fe. **(Coro)**
 
-  [
-    'Cuando la noche se acerca',
-    'Y se oscurece la fe. *CORO*',
-  ],
+  Cuando el dolor nos oprime
+  Y la ilusión ya no brilla. **(Coro)**
 
-  [
-    'Cuando el dolor nos oprime',
-    'Y la ilusión ya no brilla. *CORO*',
-  ],
+  Cuando aparece la Luz
+  Y nos sentimos felices. **(Coro)**
 
-  [
-    'Cuando aparece la Luz',
-    'Y nos sentimos felices. *CORO*',
-  ],
-
-  [
-    'Cuando nos llegue la muerte',
-    'Y tú nos lleves al cielo. *CORO*',
-  ]
-
-  ],
+  Cuando nos llegue la muerte
+  Y tú nos lleves al cielo. **(Coro)**`,
 
   isShort: false
 
