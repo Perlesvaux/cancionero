@@ -122,15 +122,20 @@ article h2 {
 .linea {
   display: block;
   text-align: left;
+  margin-bottom: 1.4rem;
 }
 
-.linea::before {
-  content: "•";
+/*.linea::before {*/
+/*  content: "•";*/
+/*  color: var(--accent);*/
+/*  margin-right: 0.5rem;*/
+/*}*/
+
+
+.linea::first-letter {
   color: var(--accent);
-  margin-right: 0.5rem;
+  font-weight: bolder;
 }
-
-
 
 /* Optional: slightly larger gap between stanzas than between lines */
 .estrofa + .estrofa {

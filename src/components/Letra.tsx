@@ -22,7 +22,15 @@ interface Props {
 }
 
 export function Letra({letra}:Props){
-  return <Mk body={letra} />
+
+  const parrafos:string[] = letra.split('\n\n') 
+
+  console.log(parrafos)
+
+  
+  return parrafos.map((p, index)=><Mk className="linea" key={index} body={p} />)
+
+
 }
 
 
