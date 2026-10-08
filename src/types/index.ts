@@ -33,3 +33,7 @@ export interface Oracion {
   cuerpo: string,
 }
 
+export interface Lectura {
+  nombre: string,
+  cuerpo: string,
+}

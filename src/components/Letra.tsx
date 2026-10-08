@@ -10,13 +10,13 @@ export function Letra({letra}:Props){
 
 
 
-  return estrofas.map((stanza, index)=><>
-                      <p key={index}>{stanza.split('\n').map((line, i)=> <> 
+  return estrofas.map((stanza, index)=>
+                      <p key={index}>{stanza.split('\n').map((line, i)=> 
                              <MinimalMk key={i} className="linea" body={line} />
-                             </>)}</p>
+                             )}</p>
 
 
-                      </>)
+                      )
   
 }
 

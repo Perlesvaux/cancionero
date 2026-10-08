@@ -1,4 +1,4 @@
-import type {Cancion, Oracion} from '../types'
+import type {Cancion, Lectura, Oracion} from '../types'
 import {alfabetico} from '../utils'
 
 import {como_el_padre_me_amo} from './canciones/como_el_padre_me_amo'
@@ -15,7 +15,12 @@ import {con_nosotros_esta} from './canciones/con_nosotros_esta'
 import {oh_maria_madre_mia} from './canciones/oh_maria_madre_mia'
 import {hoy_he_vuelto} from './canciones/hoy_he_vuelto'
 import {nadie_te_ama_como_yo} from './canciones/nadie_te_ama_como_yo'
-import { oracion_por_un_enfermo } from './oraciones/oracion_por_un_enfermo'
+import { oracion_por_un_enfermo } from './lecturas/oracion_por_un_enfermo'
+import {
+  ave_maria,
+  salve,
+  
+} from './oraciones/maria'
 
 
 
@@ -41,9 +46,14 @@ export const canciones:Cancion[] = [
 
 
 export const oraciones:Oracion[] = [
-  oracion_por_un_enfermo,
-  
+  ave_maria,
+  salve,
+
 ].sort(alfabetico)
 
 
 
+export const lecturas:Lectura[] = [
+  oracion_por_un_enfermo,
+  
+].sort(alfabetico)

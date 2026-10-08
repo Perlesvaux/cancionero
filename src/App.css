@@ -560,3 +560,15 @@ a:hover {
 a:visited {
   color: var(--accent);
 }
+
+
+
+/* ---------- Cool Looking bold and h3 in markdown *** ---------- */
+
+h3, strong {
+  color: var(--accent);
+  
+}
+
+
+

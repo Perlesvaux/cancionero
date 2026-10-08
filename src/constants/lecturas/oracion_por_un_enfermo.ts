@@ -1,6 +1,7 @@
-import type {Oracion} from '../../types'
 
- export const oracion_por_un_enfermo:Oracion = {
+import type {Lectura} from '../../types'
+
+ export const oracion_por_un_enfermo:Lectura = {
     nombre:"Oracion Por Un Enfermo", 
     cuerpo:`**Nota:** Se invita a los presentes a unirse en la oración.
 
