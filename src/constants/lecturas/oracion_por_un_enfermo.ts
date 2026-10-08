@@ -12,14 +12,7 @@ import type {Lectura} from '../../types'
 
 ### 2. Rezamos
 
-***Padre nuestro** que estás en el cielo, santificado sea Tu Nombre; venga a nosotros Tu Reino; hágase tu voluntad, en la tierra como en el cielo.*
-**R:** *Danos hoy nuestro pan de cada día; perdona nuestras deudas, como también nosotros perdonamos a nuestros deudores; no nos dejes caer en tentación, y líbranos del maligno. Amén.*
-
-***Dios te salve María**, llena eres de gracia, el Señor es contigo. Bendita eres entre todas las mujeres y bendito es el fruto de tu vientre, Jesús.*
-**R:** *Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.*
-
-***Gloria** al Padre, y al Hijo, y al Espíritu Santo.*
-**R:** *Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.*
+*Padre nuestro, Dios te salve María, Gloria*
 
 ### 3. Oramos por el enfermo
 

@@ -544,8 +544,10 @@ body {
 
 
 
-/* ---------- Cool Looking Links ---------- */
+/* ---------- Cool Looking Links, bold and h3 in markdown ---------- */
 
+h3,
+strong,
 a {
   color: var(--accent);
   text-decoration-color: color-mix(in srgb, var(--accent) 50%, transparent);
@@ -557,18 +559,11 @@ a:hover {
   text-decoration-color: var(--accent);
 }
 
+
 a:visited {
   color: var(--accent);
 }
 
-
-
-/* ---------- Cool Looking bold and h3 in markdown *** ---------- */
-
-h3, strong {
-  color: var(--accent);
-  
-}
 
 
 
