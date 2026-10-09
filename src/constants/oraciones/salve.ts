@@ -1,6 +1,6 @@
 import type {Oracion} from '../../types'
 
-export const salve:Oracion = {
+export default {
   nombre:'Salve',
   cuerpo:`Dios te salve, reina y madre de misericordia; vida, dulzura y esperanza nuestra; Dios te salve. 
 A ti clamamos los desterrados hijos de Eva. 
@@ -13,13 +13,5 @@ Ea, pues señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordios
 
 **R:** Para que seamos dignos de alcanzar las promesas de nuestro Señor Jesucristo. 
   `
-}
+} satisfies Oracion
 
-
-export const ave_maria:Oracion = {
-  nombre:'Ave Maria',
-  cuerpo:`Dios te salve María, llena eres de gracia, el Señor es contigo. Bendita eres entre todas las mujeres y bendito es el fruto de tu vientre, Jesús.
-
-**R:** Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.
-  `
-}

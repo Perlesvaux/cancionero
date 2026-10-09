@@ -1,7 +1,7 @@
 
 import type {Lectura} from '../../types'
 
- export const oracion_por_un_enfermo:Lectura = {
+ export default {
     nombre:"Oracion Por Un Enfermo", 
     cuerpo:`**Nota:** Se invita a los presentes a unirse en la oración.
 
@@ -47,4 +47,4 @@ También se puede leer una lectura bíblica, por ejemplo:
 [Jn 21,1-19](https://materialknight.github.io/doctrina-catolica/biblia-straubinger/juan#aparici%C3%B3n-junto-al-mar-de-tiber%C3%ADades).
 
 `
-  }
+  } satisfies Lectura
