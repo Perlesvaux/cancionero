@@ -1,7 +1,7 @@
 
 import type {Cancion} from '../../types'
 
-export const oh_maria_madre_mia:Cancion = {
+export default {
 
   nombre: "Oh María, Madre Mía",
   letra:`**¡Oh María, Madre mía, oh consuelo del mortal! Amparadme y guiadme a la patria celestial.**
@@ -36,9 +36,6 @@ export const oh_maria_madre_mia:Cancion = {
 
   isShort: false
 
-}
-
-
-
+} satisfies Cancion
 
 

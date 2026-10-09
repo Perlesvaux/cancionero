@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const santa_maria_del_amen:Cancion = {
+export default {
 
   nombre: "Santa Maria del Amen",
   letra: `**Madre de todos los hombres, enséñanos a decir Amén**
@@ -43,5 +43,5 @@ export const santa_maria_del_amen:Cancion = {
 
   isShort: false
 
-}
+} satisfies Cancion
 

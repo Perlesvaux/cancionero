@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const santa_maria_del_camino:Cancion = {
+export default {
 
   nombre: "Santa Maria del Camino",
   letra: `Mientras recorres la vida
@@ -41,6 +41,5 @@ export const santa_maria_del_camino:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
 

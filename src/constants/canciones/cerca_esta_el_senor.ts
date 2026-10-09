@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const cerca_esta_el_senor:Cancion = {
+export default {
 
   nombre: "Cerca está el Señor",
   letra: `Cerca está el Señor, cerca está el Señor.
@@ -46,6 +46,6 @@ export const cerca_esta_el_senor:Cancion = {
 
   isShort: false
 
-}
+} satisfies Cancion
 
 

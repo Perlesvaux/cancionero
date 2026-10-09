@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const dios_esta_aqui:Cancion = {
+export default {
 
   nombre: "Dios está aquí",
   letra:`Dios está aquí:
@@ -37,6 +37,5 @@ export const dios_esta_aqui:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
 

@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const santa_maria_de_la_esperanza:Cancion = {
+export default {
 
   nombre: "Santa María de la Esperanza",
   letra: `**Santa maría de la esperanza**
@@ -41,8 +41,7 @@ export const santa_maria_de_la_esperanza:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
 
 
 

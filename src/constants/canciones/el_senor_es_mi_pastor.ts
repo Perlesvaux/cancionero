@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const el_senor_es_mi_pastor:Cancion = {
+export default {
 
   nombre: "El Señor Es Mi Pastor",
   letra:`El Señor es mi pastor, con él nada me falta.
@@ -25,8 +25,7 @@ export const el_senor_es_mi_pastor:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
 
 
 

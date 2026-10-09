@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const como_el_padre_me_amo:Cancion = {
+export default {
 
   nombre:"Como el Padre me amó",
 
@@ -54,5 +54,6 @@ export const como_el_padre_me_amo:Cancion = {
   isShort: false
 
 
-}
+} satisfies Cancion
+
 

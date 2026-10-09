@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const pescador_de_hombres:Cancion = {
+export default {
 
   nombre: "Pescador de hombres",
   letra: `Tú has venido a la orilla,
@@ -37,5 +37,5 @@ export const pescador_de_hombres:Cancion = {
 
   isShort: false
 
-}
+} satisfies Cancion
 

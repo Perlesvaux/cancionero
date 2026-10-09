@@ -1,7 +1,7 @@
 
 import type {Cancion} from '../../types'
 
-export const con_nosotros_esta:Cancion = {
+export default {
 
   nombre: "Con Nosotros Está",
   letra: `Su nombre es el Señor y pasa hambre
@@ -50,9 +50,7 @@ export const con_nosotros_esta:Cancion = {
 
   isShort: false
 
-}
-
-
+} satisfies Cancion
 
 
 

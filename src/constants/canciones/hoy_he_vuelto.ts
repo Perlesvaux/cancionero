@@ -1,7 +1,7 @@
 
 import type {Cancion} from '../../types'
 
-export const hoy_he_vuelto:Cancion = {
+export default {
 
   nombre: "Hoy he vuelto",
   letra:`Cuántas veces siendo niño te recé
@@ -43,8 +43,7 @@ export const hoy_he_vuelto:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
 
 
 

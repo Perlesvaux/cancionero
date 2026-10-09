@@ -1,7 +1,7 @@
 
 import type {Cancion} from '../../types'
 
-export const el_senor_dios_nos_amo:Cancion = {
+export default {
 
   nombre: "El Señor Dios nos amó",
   letra: `El Señor Dios nos amó como nadie amó jamás.
@@ -39,9 +39,6 @@ export const el_senor_dios_nos_amo:Cancion = {
 
   isShort: false
 
-}
-
-
-
+} satisfies Cancion
 
 

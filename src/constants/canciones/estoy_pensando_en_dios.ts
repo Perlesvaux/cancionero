@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const estoy_pensando_en_dios:Cancion = {
+export default {
 
   nombre: "Estoy Pensando en Dios",
   letra:`**Estoy pensando en Dios**
@@ -30,6 +30,4 @@ export const estoy_pensando_en_dios:Cancion = {
 
   isShort: false
 
-}
-
-
+} satisfies Cancion

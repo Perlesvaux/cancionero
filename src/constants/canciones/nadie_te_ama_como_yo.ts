@@ -1,6 +1,6 @@
 import type {Cancion} from '../../types'
 
-export const nadie_te_ama_como_yo:Cancion = {
+export default {
 
   nombre: "Nadie Te Ama Como Yo",
   letra:`Cuánto he esperado este momento
@@ -60,5 +60,4 @@ export const nadie_te_ama_como_yo:Cancion = {
 
   isShort: false
 
-}
-
+} satisfies Cancion
