@@ -23,7 +23,7 @@ const flip = (i: number) => {
     <a href="#toc"><button> ⌂ </button></a>
 
     <button onClick={() => flip(index)}>
-      {isLatin ? '−' : '≡'}
+      {isLatin ? 'A' : 'Æ'}
     </button>
 
     <Pista nombre={nombre} />
@@ -34,8 +34,8 @@ const flip = (i: number) => {
           <h2>
           {
             isLatin
-            ?nombre
-            :nomen
+            ?nomen
+            :nombre
           }
           </h2>
 
@@ -43,8 +43,8 @@ const flip = (i: number) => {
 
           {
             isLatin
-            ?<Leyenda cuerpo={cuerpo}/>
-            :<Leyenda cuerpo={corpus}/>
+            ?<Leyenda cuerpo={corpus}/>
+            :<Leyenda cuerpo={cuerpo}/>
 
           }
           </section>
