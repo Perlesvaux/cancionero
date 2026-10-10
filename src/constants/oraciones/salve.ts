@@ -18,6 +18,8 @@ Ea, pues señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordios
 O clemens, o pia, o dulcis Virgo Maríae!
 
   Ora pro nobis, Sancta Dei Génitrix
-  Ut digni efficiámur promissiónibus Chrísti. Amen`
+  Ut digni efficiámur promissiónibus Chrísti. Amen`,
+  isLatin:false,
+
 } satisfies Oracion
 

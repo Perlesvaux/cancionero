@@ -1,4 +1,6 @@
-import type {CancionContextType} from '../types'
+import type {CancionContextType, AudioContextType, OracionContextType} from '../types'
+
+import type { Dispatch, SetStateAction } from 'react'
 
 import { createContext, useContext, 
 } from 'react'
@@ -18,6 +20,47 @@ export function useCancionContext(): CancionContextType {
   }
   return ctx
 }
+
+
+
+export const OracionContext = createContext<OracionContextType | null>(null)
+
+export function useOracionContext(): OracionContextType {
+  const ctx = useContext(OracionContext)
+  if (!ctx) {
+    throw new Error('useOracionContext must be used within a OracionContext.Provider')
+  }
+  return ctx
+}
+
+
+
+export const AudioContext = createContext<AudioContextType | null>(null)
+
+export function useAudioContext():AudioContextType {
+  const ctx = useContext(AudioContext)
+  if(!ctx) {
+    throw new Error('useAudioContext must be used within a CancionContext.Provider')
+  }
+  return ctx
+}
+
+// contexts/ItemsContext.tsx
+export function createItemsContext<T extends { nombre: string }>() {
+  const Ctx = createContext<{
+    items: T[]
+    setItems: Dispatch<SetStateAction<T[]>>
+  } | null>(null)
+
+  function useItems(): { items: T[]; setItems: Dispatch<SetStateAction<T[]>> } {
+    const ctx = useContext(Ctx)
+    if (!ctx) throw new Error('useItems must be used within its provider')
+    return ctx
+  }
+
+  return [Ctx.Provider, useItems] as const
+}
+
 
 
 

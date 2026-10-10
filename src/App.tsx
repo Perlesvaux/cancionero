@@ -2,36 +2,16 @@
 // src/App.tsx
 import './App.css'
 
+import {AudioContext, useAudioPlayer } from './hooks'
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Canciones, Oraciones, Lecturas } from './routes'
-
-
-//export default function App() {
-//  return (
-//    <BrowserRouter>
-//      {/* Navigation */}
-//      <nav>
-//        <Link to="/">Canciones</Link>
-//        <Link to="/oraciones">Oraciones</Link> 
-//        <Link to="/lecturas">Lecturas</Link>
-//      </nav>
-//
-//      {/* Routes */}
-//      <Routes>
-//        <Route path="/" element={<Canciones />} />
-//        <Route path="/oraciones" element={<Oraciones />} />
-//      </Routes>
-//    </BrowserRouter>
-//  );
-//}
-
-
-
-
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
+
 export default function App() {
-  return (
+  const player = useAudioPlayer()
+
+  return (<AudioContext.Provider value={{player}}>
     <BrowserRouter>
       <nav>
         <NavLink to="/">Canciones</NavLink>
@@ -45,6 +25,7 @@ export default function App() {
         <Route path="/lecturas" element={<Lecturas />} />
       </Routes>
     </BrowserRouter>
+  </AudioContext.Provider>
   );
 }
 

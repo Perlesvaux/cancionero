@@ -8,34 +8,44 @@ export interface Cancion {
   isShort: boolean,
 }
 
-type PlayerContextType = {
+type PlayerType = {
   playingId: string | null
   toggle: (id: string, src: string) => void
 }
 
-export type CancionContextType = {
-  items: Cancion[]
-  setItems: Dispatch<SetStateAction<Cancion[]>>,
-  player: PlayerContextType
-}
 
 export interface IndiceProps {
-  items: IndiceItems
+  items: Cancion[] | Oracion[] | Lectura []
 }
-
-
-type IndiceItems = Cancion[] | Oracion[]
-
 
 export interface Oracion {
   nombre: string,
   cuerpo: string,
   corpus: string,
   nomen: string,
+  isLatin:boolean,
 
 }
 
 export interface Lectura {
   nombre: string,
   cuerpo: string,
+}
+
+export type AudioContextType = {
+  player: PlayerType
+
+}
+
+
+// ----- Types for context -----
+
+export type OracionContextType = {
+  items: Oracion[]
+  setItems: Dispatch<SetStateAction<Oracion[]>>,
+}
+
+export type CancionContextType = {
+  items: Cancion[]
+  setItems: Dispatch<SetStateAction<Cancion[]>>,
 }

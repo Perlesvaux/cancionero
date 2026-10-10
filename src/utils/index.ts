@@ -1,8 +1,8 @@
-import type {Cancion, Oracion} from '../types'
+import type {Cancion, Oracion, Lectura} from '../types'
 
 
 // Sort songs in alphabetical order
-export const alfabetico = (a:Cancion|Oracion, b:Cancion|Oracion) => a.nombre.localeCompare(b.nombre, 'es')
+export const alfabetico = (a:Cancion|Oracion|Lectura, b:Cancion|Oracion|Lectura) => a.nombre.localeCompare(b.nombre, 'es')
 
 export const slugify = (s: string) =>
   s
