@@ -1,26 +1,18 @@
 import {useCancionContext} from '../hooks'
 import { Letra } from './Letra'
 import {Pista} from './Pista'
-import { slugify } from '../utils'
+import { slugify, flip } from '../utils'
 
 export function ListaDeCanciones(){
 
   const {items, setItems} = useCancionContext()
-
-  const flip = (i: number) => {
-    setItems(prev =>
-    prev.map((c, idx) =>
-      idx === i ? { ...c, isShort: !c.isShort } : c
-     )
-    )
-  }
 
   return <>{items.map(({ nombre, letra, resumen, isShort }, index) => (
     <article key={nombre} id={slugify(nombre)}>
 
       <div className="song-controls">
         <a href="#toc"><button> ⌂ </button></a>
-        <button onClick={() => flip(index)}>
+        <button onClick={() => setItems(flip(items, index, 'isShort'))}>
           {isShort ? '−' : '≡'}
         </button>
         <Pista nombre={nombre} />

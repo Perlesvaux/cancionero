@@ -1,5 +1,15 @@
 import type {Cancion, Oracion, Lectura} from '../types'
 
+export function flip<T, K extends keyof T>(
+  items:T[], 
+  index:number, 
+  key:K
+): T[] {
+  return  items.map( (item, i) => 
+    i===index ? {...item, [key]: !item[key]} : item   
+  )
+}
+
 
 // Sort songs in alphabetical order
 export const alfabetico = (a:Cancion|Oracion|Lectura, b:Cancion|Oracion|Lectura) => a.nombre.localeCompare(b.nombre, 'es')
