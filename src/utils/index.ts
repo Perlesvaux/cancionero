@@ -36,3 +36,5 @@ export function parseMarkdown(src: string): string {
     // line breaks
     .replace(/\n/g, '<br />')
 }
+
+

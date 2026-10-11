@@ -1,12 +1,37 @@
 import type { Dispatch, SetStateAction } from 'react'
 
+// ----- Items -----
 
-export interface Cancion {
+interface Item {
   nombre: string,
+}
+
+export interface Cancion extends Item {
   letra: string,
   resumen: string,
   isShort: boolean,
 }
+
+export interface Oracion extends Item {
+  cuerpo: string,
+  corpus: string,
+  nomen: string,
+  isLatin:boolean,
+
+}
+
+export interface Lectura extends Item {
+  cuerpo: string,
+}
+
+
+
+
+
+
+
+
+
 
 type PlayerType = {
   playingId: string | null
@@ -18,27 +43,13 @@ export interface IndiceProps {
   items: Cancion[] | Oracion[] | Lectura []
 }
 
-export interface Oracion {
-  nombre: string,
-  cuerpo: string,
-  corpus: string,
-  nomen: string,
-  isLatin:boolean,
-
-}
-
-export interface Lectura {
-  nombre: string,
-  cuerpo: string,
-}
-
 export type AudioContextType = {
   player: PlayerType
 
 }
 
 
-// ----- Types for context -----
+// ----- Context -----
 
 export type OracionContextType = {
   items: Oracion[]

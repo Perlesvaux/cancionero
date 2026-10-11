@@ -7,11 +7,11 @@ export function Oraciones() {
 
   const [items, setItems] = useState(oraciones)
 
-  if (!oraciones) return <> Por favor espere ... </>
+  if (!items) return <> Por favor espere ... </>
 
   return (
     <OracionContext.Provider value={{ items, setItems }}>
-      <Indice items={oraciones} />
+      <Indice items={items} />
       <ListaDeOraciones />
     </OracionContext.Provider>
   )
