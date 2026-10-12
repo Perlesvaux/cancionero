@@ -11,12 +11,12 @@ export function Canciones() {
   if (!items) return <> Por favor espere ... </>
 
   return (
-    <CancionContext.Provider value={{items, setItems}}>
+    <CancionContext value={{items, setItems}}>
 
       <Indice items={items} />
       <ListaDeCanciones />
 
-    </CancionContext.Provider>
+    </CancionContext>
   )
 }
 

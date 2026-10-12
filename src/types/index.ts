@@ -2,7 +2,7 @@ import type { Dispatch, SetStateAction } from 'react'
 
 // ----- Items -----
 
-interface Item {
+export interface Item {
   nombre: string,
 }
 

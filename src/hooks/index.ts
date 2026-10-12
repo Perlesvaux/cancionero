@@ -1,4 +1,11 @@
-import type {CancionContextType, AudioContextType, OracionContextType} from '../types'
+import type {
+  Cancion,
+  Item,
+  Oracion,
+  //CancionContextType, 
+  AudioContextType,
+  //OracionContextType
+} from '../types'
 
 import type { Dispatch, SetStateAction } from 'react'
 
@@ -11,27 +18,27 @@ import { createContext, useContext,
 //  return useContext(CancionContext)
 //}
 
-export const CancionContext = createContext<CancionContextType | null>(null)
+//export const CancionContext = createContext<CancionContextType | null>(null)
+//
+//export function useCancionContext(): CancionContextType {
+//  const ctx = useContext(CancionContext)
+//  if (!ctx) {
+//    throw new Error('useCancionContext must be used within a CancionContext.Provider')
+//  }
+//  return ctx
+//}
 
-export function useCancionContext(): CancionContextType {
-  const ctx = useContext(CancionContext)
-  if (!ctx) {
-    throw new Error('useCancionContext must be used within a CancionContext.Provider')
-  }
-  return ctx
-}
 
 
-
-export const OracionContext = createContext<OracionContextType | null>(null)
-
-export function useOracionContext(): OracionContextType {
-  const ctx = useContext(OracionContext)
-  if (!ctx) {
-    throw new Error('useOracionContext must be used within a OracionContext.Provider')
-  }
-  return ctx
-}
+//export const OracionContext = createContext<OracionContextType | null>(null)
+//
+//export function useOracionContext(): OracionContextType {
+//  const ctx = useContext(OracionContext)
+//  if (!ctx) {
+//    throw new Error('useOracionContext must be used within a OracionContext.Provider')
+//  }
+//  return ctx
+//}
 
 
 
@@ -46,7 +53,7 @@ export function useAudioContext():AudioContextType {
 }
 
 // contexts/ItemsContext.tsx
-export function createItemsContext<T extends { nombre: string }>() {
+export function createItemsContext<T extends Item>() {
   const Ctx = createContext<{
     items: T[]
     setItems: Dispatch<SetStateAction<T[]>>
@@ -62,6 +69,9 @@ export function createItemsContext<T extends { nombre: string }>() {
 }
 
 
+
+export const [OracionContext, useOracionContext] = createItemsContext<Oracion>()
+export const [CancionContext, useCancionContext] = createItemsContext<Cancion>()
 
 
 

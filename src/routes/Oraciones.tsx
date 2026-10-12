@@ -10,10 +10,10 @@ export function Oraciones() {
   if (!items) return <> Por favor espere ... </>
 
   return (
-    <OracionContext.Provider value={{ items, setItems }}>
+    <OracionContext value={{ items, setItems }}>
       <Indice items={items} />
       <ListaDeOraciones />
-    </OracionContext.Provider>
+    </OracionContext>
   )
 }
 
