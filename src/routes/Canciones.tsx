@@ -1,22 +1,17 @@
 
 import {canciones} from '../constants'
-import {CancionContext } from '../hooks'
+import { CancionProvider } from '../components'
 import {Indice, ListaDeCanciones} from '../components'
-import {useState} from 'react'
 
 export function Canciones() {
 
-  const [items, setItems] = useState(canciones)
-
-  if (!items) return <> Por favor espere ... </>
-
   return (
-    <CancionContext value={{items, setItems}}>
+    <CancionProvider initial={canciones}>
 
-      <Indice items={items} />
+      <Indice items={canciones} />
       <ListaDeCanciones />
 
-    </CancionContext>
+    </CancionProvider>
   )
 }
 

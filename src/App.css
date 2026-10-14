@@ -205,6 +205,12 @@ article h2 {
     font-size: 13pt;
   }
 
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
   /* Two-column layout for wider printouts */
   @media (min-width: 8in) {
     body {
@@ -215,6 +221,7 @@ article h2 {
       break-inside: avoid;
     }
   }
+
 }
 
 /* ---------- Reduced motion / accessibility ---------- */

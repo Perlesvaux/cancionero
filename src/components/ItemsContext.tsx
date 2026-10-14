@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import type { Dispatch, SetStateAction, ReactNode } from 'react'
-import type { Item, Oracion } from '../types'
+import type { Item, Oracion, Cancion } from '../types'
 
 export function createItemsContext<T extends Item>(){
 
@@ -31,6 +31,8 @@ export function createItemsContext<T extends Item>(){
 
 
   export const {Provider:OracionProvider, useItems:useOracionContext} = createItemsContext<Oracion>()  
+
+  export const {Provider:CancionProvider, useItems:useCancionContext} = createItemsContext<Cancion>()  
 
   
 

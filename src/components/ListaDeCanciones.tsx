@@ -1,4 +1,5 @@
-import {useCancionContext} from '../hooks'
+//import {useCancionContext} from '../hooks'
+import {useCancionContext} from '../components'
 import { Letra } from './Letra'
 import {Pista} from './Pista'
 import { slugify, flip } from '../utils'
