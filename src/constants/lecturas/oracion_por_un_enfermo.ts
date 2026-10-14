@@ -18,7 +18,7 @@ import type {Lectura} from '../../types'
 
 Salva Señor a tu siervo (a), porque espera en ti; desde el cielo envíale ayuda y protéjelo (a); y sé para él (ella) un baluarte frente al enemigo.
 
-**Oremos:** Oh Dios bondadoso, que movido por tu misericordia nos enviaste desde el cielo a Jesucristo nuestro Salvador; mira compasivo a tu hijo (a) [NOMBRE] que sufre la enfermedad; muéstrale tu bondad, tu misericordia y tu perdón. Por Jesucristo Nuestro Señor. R. Amén.
+**Oremos:** Oh Dios bondadoso, que movido por tu misericordia nos enviaste desde el cielo a Jesucristo nuestro Salvador; mira compasivo a tu hijo (a) [NOMBRE] que sufre la enfermedad; muéstrale tu bondad, tu misericordia y tu perdón. Por Jesucristo Nuestro Señor. **R:** Amén.
 
 
 ### 4. Jaculatorias

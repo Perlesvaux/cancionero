@@ -1,19 +1,20 @@
 import {Indice, ListaDeOraciones} from '../components'
-import {useState} from 'react'
+//import {useState} from 'react'
 import {oraciones} from '../constants'
-import { OracionContext } from '../hooks'
+//import { OracionContext } from '../hooks'
+import { OracionProvider } from '../components'
 
 export function Oraciones() {
 
-  const [items, setItems] = useState(oraciones)
+  //const [items, setItems] = useState(oraciones)
 
-  if (!items) return <> Por favor espere ... </>
+  //if (!items) return <> Por favor espere ... </>
 
   return (
-    <OracionContext value={{ items, setItems }}>
-      <Indice items={items} />
+    <OracionProvider initial={oraciones}>
+      <Indice items={oraciones} />
       <ListaDeOraciones />
-    </OracionContext>
+    </OracionProvider>
   )
 }
 

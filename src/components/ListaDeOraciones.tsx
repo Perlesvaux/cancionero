@@ -1,10 +1,12 @@
 import {slugify, flip} from '../utils'
 import {Leyenda} from './Leyenda'
-import {useOracionContext} from '../hooks'
+//import {useOracionContext} from '../hooks'
 import {Pista} from './Pista'
+import { useOracionContext } from './ItemsContext'
 
 export function ListaDeOraciones(){
 
+  //const {items, setItems} = useOracionContext()
   const {items, setItems} = useOracionContext()
 
   return <>{items.map(({ nombre, cuerpo, nomen, corpus, isLatin }, index) => (
