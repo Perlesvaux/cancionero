@@ -190,11 +190,16 @@ article h2 {
     --accent: #C62D25;
     --rule: #999;
     --shadow: none;
+    --main-text:20pt;
+    --capital:24pt;
+    --cover:50pt;
+    --title:24pt;
+    --interlineado:1.4em;
   }
 
   body {
     padding: 0;
-    font-size: 20pt;
+    font-size: var(--main-text);
   }
 
   article {
@@ -210,7 +215,7 @@ article h2 {
 
   article h2 {
     color:var(--accent);
-    font-size: 24pt;
+    font-size: var(--title);
   }
 
   nav,
@@ -231,12 +236,21 @@ article h2 {
   .linea::first-letter {
     color: var(--accent);
     font-weight: bolder;
-    font-size: 22pt;
+    font-size: var(--capital);
+  }
+
+  .linea {
+    text-align: center;
+    line-height: var(--interlineado);
   }
 
   h2.toc__title {
     color: var(--accent);
     font-weight: bolder;
+  }
+
+  .toc__list {
+    line-height: var(--interlineado);
   }
 
 
@@ -263,47 +277,18 @@ article h2 {
 
   }
 
+  .portada-img img {
+    width: 100%;
+  }
+
   .portada-legend {
-    font-size:50pt ;
+    font-size:var(--cover) ;
     color:var(--fg-muted);
     text-align: center;
     /*text-decoration: overline;*/
     border-top: 5px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
     line-height: 2.5em;
-  }
-
-
-
-  /* Back cover: always its own page */
-  .contra-portada {
-    /*break-before: page;*/
-    /*page-break-before: always;*/
-
-    height: 80vh;
-    box-sizing: border-box;
-
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-
-    break-inside: avoid;
-    page-break-inside: avoid;
-    font-style: italic;
-    font-weight: bolder;
-
-  }
-
-  .contra-portada .portada-img {
-    flex: 1;
-    min-height: 0;
-  }
-
-  .contra-portada .portada-img img {
-    max-height: 100%;
-  }
-
-  .contra-portada .portada-legend {
-    flex-shrink: 0;
   }
 
 
