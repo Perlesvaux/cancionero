@@ -2,7 +2,7 @@ export function ContraPortada() {
   return (
     <article className="print-only-flex contra-portada">
       <section className="portada-img">
-        <img src="/pasionistas-contra-portada-tbg.webp" />
+        <img src="/corazon.webp" />
       </section>
 
       <section className="portada-legend">

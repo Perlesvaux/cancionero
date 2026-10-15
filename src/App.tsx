@@ -1,12 +1,10 @@
 // Thanks2: https://www.w3schools.com/react/react_router.asp
 // src/App.tsx
 import './App.css'
-import { ContraPortada } from './components/ContraPortada';
-import { Portada } from './components/Portada';
 
 import {AudioContext, useAudioPlayer } from './hooks'
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Canciones, Oraciones, Lecturas } from './routes'
+import { Canciones, Oraciones, Lecturas, Print } from './routes'
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
 
@@ -14,8 +12,6 @@ export default function App() {
   const player = useAudioPlayer()
 
   return (<AudioContext.Provider value={{player}}>
-          <Portada />
-          <Portada />
     <BrowserRouter>
       <nav>
         <NavLink to="/">Canciones</NavLink>
@@ -27,9 +23,9 @@ export default function App() {
         <Route path="/" element={<Canciones />} />
         <Route path="/oraciones" element={<Oraciones />} />
         <Route path="/lecturas" element={<Lecturas />} />
+        <Route path="/print" element={<Print />} />
       </Routes>
     </BrowserRouter>
-    <ContraPortada/>
   </AudioContext.Provider>
   );
 }

@@ -7,3 +7,6 @@ export {ListaDeLecturas} from './ListaDeLecturas'
 
 export {OracionProvider, useOracionContext} from './ItemsContext'
 export {CancionProvider, useCancionContext} from './ItemsContext'
+
+export {Portada} from './Portada'
+export {ContraPortada} from './ContraPortada'

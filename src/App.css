@@ -174,7 +174,10 @@ article h2 {
 
 
 .print-only-inline {
-    display: none;
+  display: none;
+}
+.print-only-flex {
+  display: none;
 }
 
 /* ---------- Print ---------- */
@@ -220,6 +223,11 @@ article h2 {
     display:inline !important;
   }
 
+
+  .print-only-flex {
+    display:flex !important;
+  }
+
   .linea::first-letter {
     color: var(--accent);
     font-weight: bolder;
@@ -242,6 +250,8 @@ article h2 {
 
     break-inside: avoid;
     page-break-inside: avoid;
+    font-style: italic;
+    font-weight: bolder;
     /*border: 2px solid var(--accent);*/
   }
 
@@ -266,8 +276,8 @@ article h2 {
 
   /* Back cover: always its own page */
   .contra-portada {
-    break-before: page;
-    page-break-before: always;
+    /*break-before: page;*/
+    /*page-break-before: always;*/
 
     height: 80vh;
     box-sizing: border-box;
@@ -278,6 +288,9 @@ article h2 {
 
     break-inside: avoid;
     page-break-inside: avoid;
+    font-style: italic;
+    font-weight: bolder;
+
   }
 
   .contra-portada .portada-img {
