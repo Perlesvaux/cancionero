@@ -172,6 +172,11 @@ article h2 {
   }
 }
 
+
+.print-only {
+    display: none;
+}
+
 /* ---------- Print ---------- */
 @media print {
   :root {
@@ -179,14 +184,14 @@ article h2 {
     --bg-elevated: #fff;
     --fg: #000;
     --fg-muted: #333;
-    --accent: #000;
+    --accent: #C62D25;
     --rule: #999;
     --shadow: none;
   }
 
   body {
     padding: 0;
-    font-size: 11pt;
+    font-size: 20pt;
   }
 
   article {
@@ -201,8 +206,8 @@ article h2 {
   }
 
   article h2 {
-    color: #000;
-    font-size: 13pt;
+    color:var(--accent);
+    font-size: 24pt;
   }
 
   nav,
@@ -210,6 +215,17 @@ article h2 {
   .no-print {
     display: none !important;
   }
+
+  .print-only {
+    display:inline !important;
+  }
+
+  .linea::first-letter {
+    color: var(--accent);
+    font-weight: bolder;
+    font-size: 22pt;
+  }
+
 
   /* Two-column layout for wider printouts */
   @media (min-width: 8in) {

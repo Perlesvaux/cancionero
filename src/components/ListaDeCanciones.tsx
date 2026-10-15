@@ -20,6 +20,9 @@ export function ListaDeCanciones(){
       </div>
 
       <h2>
+        <span className="print-only">
+        {index+1}.{" "} 
+        </span> 
         {nombre}
       </h2>
 
