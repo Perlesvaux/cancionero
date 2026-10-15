@@ -173,7 +173,7 @@ article h2 {
 }
 
 
-.print-only {
+.print-only-inline {
     display: none;
 }
 
@@ -216,7 +216,7 @@ article h2 {
     display: none !important;
   }
 
-  .print-only {
+  .print-only-inline {
     display:inline !important;
   }
 
@@ -225,6 +225,78 @@ article h2 {
     font-weight: bolder;
     font-size: 22pt;
   }
+
+  h2.toc__title {
+    color: var(--accent);
+    font-weight: bolder;
+  }
+
+
+  .portada {
+    height: 80vh;
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+    /*border: 2px solid var(--accent);*/
+  }
+
+
+  .portada-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .portada-legend {
+    font-size:50pt ;
+    color:var(--fg-muted);
+    text-align: center;
+    /*text-decoration: overline;*/
+    border-top: 5px solid var(--accent);
+    line-height: 2.5em;
+  }
+
+
+
+  /* Back cover: always its own page */
+  .contra-portada {
+    break-before: page;
+    page-break-before: always;
+
+    height: 80vh;
+    box-sizing: border-box;
+
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .contra-portada .portada-img {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .contra-portada .portada-img img {
+    max-height: 100%;
+  }
+
+  .contra-portada .portada-legend {
+    flex-shrink: 0;
+  }
+
+
+
+
+
 
 
   /* Two-column layout for wider printouts */
