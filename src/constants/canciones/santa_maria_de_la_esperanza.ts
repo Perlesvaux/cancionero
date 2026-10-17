@@ -3,7 +3,7 @@ import type {Cancion} from '../../types'
 export default {
 
   nombre: "Santa María de la Esperanza",
-  letra: `**Santa maría de la esperanza**
+  letra: `**Santa María de la Esperanza**
   **Mantén el ritmo de nuestra espera**
   **Mantén el ritmo de nuestra espera**
 
@@ -34,7 +34,7 @@ export default {
   Y nosotros esperamos que su vida
   Anime nuestro mundo para siempre.
 
-  **Santa maría de la esperanza**
+  **Santa María de la Esperanza**
   **Mantén el ritmo de nuestra espera**
   **Mantén el ritmo de nuestra espera**`
 ,

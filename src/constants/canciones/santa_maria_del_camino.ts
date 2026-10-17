@@ -2,11 +2,11 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Santa Maria del Camino",
+  nombre: "Santa María del Camino",
   letra: `Mientras recorres la vida
   Tú nunca solo estás
   Contigo por el camino
-  Santa María, va
+  Santa María va.
 
   **Ven con nosotros al caminar**
   **Santa María, ven**
@@ -32,7 +32,7 @@ export default {
   resumen:`Mientras recorres la vida
   Tú nunca solo estás
   Contigo por el camino
-  Santa María, va
+  Santa María va.
 
   **Ven con nosotros al caminar**
   **Santa María, ven**

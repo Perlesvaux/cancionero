@@ -21,7 +21,7 @@ export default {
 
   Si os ponéis en camino,
   Sirviendo siempre a la verdad,
-  Fruto daréis en abundancia;
+  Frutos daréis en abundancia;
   Mi amor se manifestará.
 
   No veréis amor tan grande
@@ -42,7 +42,7 @@ export default {
 
   Si os ponéis en camino,
   Sirviendo siempre a la verdad,
-  Fruto daréis en abundancia;
+  Frutos daréis en abundancia;
   Mi amor se manifestará.
 
   **Como el Padre me amó,**

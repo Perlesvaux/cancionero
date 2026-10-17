@@ -15,7 +15,7 @@ export default {
   Por caminos que se alejan, me perdí
   Por caminos que se alejan, me perdí
 
-  Y hoy he vuelto, madre, a recordar
+  Hoy he vuelto, madre, a recordar
   Cuántas cosas dije ante tu altar
   Y al rezarte puedo comprender
   **Que una madre no se cansa de esperar**
@@ -27,14 +27,14 @@ export default {
   Y tu abrazo es mi alegría de volver
   Y tu abrazo es mi alegría de volver
 
-  Y hoy he vuelto, madre, a recordar
+  Hoy he vuelto, madre, a recordar
   Cuántas cosas dije ante tu altar
   Y al rezarte puedo comprender
   **Que una madre no se cansa de esperar**
   **Que una madre no se cansa de esperar**`,
 
 
-  resumen:`Y hoy he vuelto, madre, a recordar
+  resumen:`Hoy he vuelto, madre, a recordar
   Cuántas cosas dije ante tu altar
   Y al rezarte puedo comprender
   **Que una madre no se cansa de esperar**

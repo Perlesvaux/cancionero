@@ -2,8 +2,10 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Santa Maria del Amen",
-  letra: `**Madre de todos los hombres, enséñanos a decir Amén**
+  nombre: "Santa María del Amén",
+  letra: `**Madre de todos los hombres**
+
+    **Enséñanos a decir Amén**
 
     Cuando la noche se acerca
     Y se oscurece la fe. 
@@ -21,13 +23,15 @@ export default {
     **Madre de todos los hombres, enséñanos a decir Amén**
 
     Cuando nos llegue la muerte
-    Y tú nos lleves al cielo. 
+    Y Tú nos lleves al cielo. 
 
     **Madre de todos los hombres, enséñanos a decir Amén**`
 ,
 
 
-  resumen: `**Madre de todos los hombres, enséñanos a decir Amén**
+  resumen: `**Madre de todos los hombres,
+
+  **Enséñanos a decir Amén**
 
   Cuando la noche se acerca
   Y se oscurece la fe. **(Coro)**
@@ -39,7 +43,7 @@ export default {
   Y nos sentimos felices. **(Coro)**
 
   Cuando nos llegue la muerte
-  Y tú nos lleves al cielo. **(Coro)**`,
+  Y Tú nos lleves al cielo. **(Coro)**`,
 
   isShort: false
 
