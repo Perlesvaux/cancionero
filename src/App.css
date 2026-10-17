@@ -194,7 +194,7 @@ article h2 {
     --capital:24pt;
     --cover:50pt;
     --title:24pt;
-    --interlineado:1.4em;
+    --interlineado:1.15em;
   }
 
   body {
@@ -449,7 +449,8 @@ article {
 /* ---------- Page setup ---------- */
 @page {
   size: A4;
-  margin: 18mm 20mm 20mm;
+  /*margin: 18mm 20mm 20mm;*/
+  margin: 8mm 12mm 10mm;
 
   /* Running footers — supported in Chromium & Firefox */
   @bottom-center {
@@ -462,12 +463,16 @@ article {
 
 /* Optional: mirrored margins for double-sided printing */
 @page :left {
+  /*margin-left: 15mm;*/
+  /*margin-right: 25mm;*/
   margin-left: 15mm;
-  margin-right: 25mm;
+  margin-right: 10mm;
 }
 
 @page :right {
-  margin-left: 25mm;
+  /*margin-left: 25mm;*/
+  /*margin-right: 15mm;*/
+  margin-left: 10mm;
   margin-right: 15mm;
 }
 
