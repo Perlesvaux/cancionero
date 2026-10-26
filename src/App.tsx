@@ -23,7 +23,9 @@ export default function App() {
         <Route path="/" element={<Canciones />} />
         <Route path="/oraciones" element={<Oraciones />} />
         <Route path="/lecturas" element={<Lecturas />} />
-        <Route path="/print" element={<Print />} />
+        {import.meta.env.DEV && (
+          <Route path="/print" element={<Print />} />
+        )}
       </Routes>
     </BrowserRouter>
   </AudioContext.Provider>

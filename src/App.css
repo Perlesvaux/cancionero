@@ -173,11 +173,44 @@ article h2 {
 }
 
 
+/* ---------- Alphabetical index instead of numerical ---------- */
+
+.toc__list.upper-alpha {
+  counter-reset: toc;
+}
+
+.toc__list.upper-alpha li {
+  counter-increment: toc;
+}
+
+.toc__list.upper-alpha a::before {
+  content: counter(toc, upper-alpha) ".";
+}
+
+/* ---------- Roman index instead of numerical ---------- */
+
+.toc__list.upper-roman {
+  counter-reset: toc;
+}
+
+.toc__list.upper-roman li {
+  counter-increment: toc;
+}
+
+.toc__list.upper-roman a::before {
+  content: counter(toc, upper-roman) ".";
+}
+
 .print-only-inline {
   display: none;
 }
 .print-only-flex {
   display: none;
+}
+
+.page-break {
+  break-before: page;
+  page-break-before: always; /* legacy support */
 }
 
 /* ---------- Print ---------- */
@@ -196,6 +229,10 @@ article h2 {
     --title:24pt;
     --interlineado:1.15em;
   }
+
+.smaller {
+  font-size: 15pt;
+}
 
   body {
     padding: 0;
@@ -663,5 +700,54 @@ a:visited {
 }
 
 
+
+
+
+/* ---------- Blockquotes ---------- */
+
+blockquote {
+  max-width: var(--measure);
+  margin: 1.75rem auto;
+  padding: 0 0 0 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--fg-muted);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0 0 1rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Opening quotation mark in accent color, hanging in the margin */
+blockquote p:first-of-type::before {
+  content: "“";
+  color: var(--accent);
+  font-size: 1.6em;
+  line-height: 0;
+  vertical-align: -0.15em;
+  margin-right: 0.05em;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Attribution / source line (e.g. <cite> or last <p>) */
+blockquote cite,
+blockquote footer {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85em;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+blockquote cite::before {
+  content: "— ";
+}
 
 

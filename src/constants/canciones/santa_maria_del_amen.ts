@@ -29,7 +29,7 @@ export default {
 ,
 
 
-  resumen: `**Madre de todos los hombres,
+  resumen: `**Madre de todos los hombres,**
 
   **Enséñanos a decir Amén**
 

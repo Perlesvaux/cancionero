@@ -40,7 +40,9 @@ type PlayerType = {
 
 
 export interface IndiceProps {
-  items: Cancion[] | Oracion[] | Lectura []
+  items: Cancion[] | Oracion[] | Lectura [],
+  title?:string,
+  listStyleType?:string,
 }
 
 export type AudioContextType = {

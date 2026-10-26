@@ -4,7 +4,7 @@ import {Leyenda} from './Leyenda'
 
 export function ListaDeLecturas({items}:ListaDeLecturasProps){
 
-      return <>{items.map(({ nombre, cuerpo }) => (
+      return <>{items.map(({ nombre, cuerpo }, index) => (
         <article key={nombre} id={slugify(nombre)}>
 
   <div className="song-controls">
@@ -13,7 +13,12 @@ export function ListaDeLecturas({items}:ListaDeLecturasProps){
 
   </div>
   
-          <h2>{nombre}</h2>
+      <h2>
+        <span className="print-only-inline">
+        {abc[index]}.{" "} 
+        </span> 
+        {nombre}
+      </h2>
           <section>
               <Leyenda cuerpo={cuerpo}/>
           </section>
@@ -24,4 +29,7 @@ export function ListaDeLecturas({items}:ListaDeLecturasProps){
 interface ListaDeLecturasProps {
   items:Lectura[]
 }
+
+
+export const abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
 
