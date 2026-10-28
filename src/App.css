@@ -239,23 +239,27 @@ p {
     --interlineado:1.15em;
   }
 
+h2.toc__title {
+  font-size: var(--capital);
+}
 
-  .red-hue {
-    --fg:#C62D25;
-    --fg-muted:#C62D25;
-  }
+.red-hue {
+  --accent:    #C62D25;   /* unchanged */
+  --fg:        #A8231C;   /* deeper red — stronger, prints darker */
+  --fg-muted:  #C97A74;   /* softened, desaturated red for secondary text */
+}
 
-  .blue-hue {
-    --accent:#1F5C99;
-    --fg: #1F5C99;
-    --fg-muted:#1F5C99 ;
-  }
+.blue-hue {
+  --accent:    #1F5C99;   /* unchanged */
+  --fg:        #174A7C;   /* deeper blue — solid on paper */
+  --fg-muted:  #6E93B8;   /* muted slate blue */
+}
 
-  .green-hue {
-    --accent:#2E6B3A;
-    --fg: #2E6B3A;
-    --fg-muted:#2E6B3A ;
-  }
+.green-hue {
+  --accent:    #2E6B3A;   /* unchanged */
+  --fg:        #24562F;   /* deeper green */
+  --fg-muted:  #79A085;   /* muted sage green */
+}
 
   .printed-lectures {
     font-size: 19pt;

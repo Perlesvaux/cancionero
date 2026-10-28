@@ -3,7 +3,7 @@ import type {Lectura} from '../../types'
 export default {
   nombre:"Visita sin comunión a los enfermos",
   cuerpo:`
-### 1.- Traer
+### 1. Traer
 -  Un Crucifijo, si es posible con su basecita
 -  Un mantelito limpio, que pueden bordar ustedes o un familiar o quizá la enfermita…(Se pueden colocar algunas florecitas frescas de la casa del enfermo)
 - Una vela de vasito y fuego
@@ -11,7 +11,7 @@ export default {
    - Biblia, si piensan leer algún texto de ella.
    - SI ERES MINISTRO, todo lo necesario para dar la Sagrada Comunión
 
-### 2.- Desarrollo de la visita (si es posible, concertarla con tiempo)
+### 2. Desarrollo de la visita (si es posible, concertarla con tiempo)
 *Actitudes del Visitador:  Leer con atención las páginas 48 y 49 del Folleto “VISITADORES DE ENFERMOS”.*
 - Saludo cariñoso al enfermo y a sus familiares y decirles (si es la primera vez que visitan) que vienen enviados por la Parroquia.
 - Diálogo personal con el enfermo, ¡sobre todo, escucharlo!
