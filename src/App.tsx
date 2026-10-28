@@ -16,7 +16,7 @@ export default function App() {
     <BrowserRouter>
     <ScrollToTop />
       <nav>
-        <NavLink to="/" className="nav-icon">♪</NavLink>
+        <NavLink to="/" className="nav-icon">♬</NavLink>
         <NavLink to="/oraciones"  className="nav-icon">☧</NavLink>
         <NavLink to="/oraciones_para_enfermos" className="nav-icon">⚕</NavLink>
         <NavLink to="/lecturas" className="nav-icon" >❦</NavLink>

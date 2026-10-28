@@ -378,19 +378,19 @@ h2.toc__title {
 
 
 
+}
 
   /* Two-column layout for wider printouts */
-  @media (min-width: 8in) {
-    body {
-      column-count: 2;
-      column-gap: 2rem;
-    }
-    article {
-      break-inside: avoid;
-    }
-  }
+  /*@media (min-width: 8in) {*/
+  /*  body {*/
+  /*    column-count: 2;*/
+  /*    column-gap: 2rem;*/
+  /*  }*/
+  /*  article {*/
+  /*    break-inside: avoid;*/
+  /*  }*/
+  /*}*/
 
-}
 
 /* ---------- Reduced motion / accessibility ---------- */
 @media (prefers-reduced-motion: reduce) {
