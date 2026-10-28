@@ -4,7 +4,7 @@ import './App.css'
 
 import {AudioContext, useAudioPlayer } from './hooks'
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Canciones, Oraciones, Lecturas, Print } from './routes'
+import { Canciones, Oraciones, Lecturas, OracionesParaEnfermos, Print } from './routes'
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 
 
@@ -14,14 +14,16 @@ export default function App() {
   return (<AudioContext.Provider value={{player}}>
     <BrowserRouter>
       <nav>
-        <NavLink to="/">Canciones</NavLink>
-        <NavLink to="/oraciones">Oraciones</NavLink>
-        <NavLink to="/lecturas">Lecturas</NavLink>
+        <NavLink to="/" className="nav-icon">♪</NavLink>
+        <NavLink to="/oraciones"  className="nav-icon">☧</NavLink>
+        <NavLink to="/oraciones_para_enfermos" className="nav-icon">⚕</NavLink>
+        <NavLink to="/lecturas" className="nav-icon" >❦</NavLink>
       </nav>
 
       <Routes>
         <Route path="/" element={<Canciones />} />
         <Route path="/oraciones" element={<Oraciones />} />
+        <Route path="/oraciones_para_enfermos" element={<OracionesParaEnfermos />} />
         <Route path="/lecturas" element={<Lecturas />} />
         {import.meta.env.DEV && (
           <Route path="/print" element={<Print />} />

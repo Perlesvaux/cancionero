@@ -8,7 +8,7 @@ export function Canciones() {
   return (
     <CancionProvider initial={canciones}>
 
-      <Indice items={canciones} />
+      <Indice items={canciones} title="Canciones"/>
       <ListaDeCanciones />
 
     </CancionProvider>

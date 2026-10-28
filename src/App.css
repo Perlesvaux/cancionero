@@ -775,3 +775,9 @@ blockquote cite::before {
 }
 
 
+
+.nav-icon {
+  font-size: 1.55em;      /* relative to parent text — usually what you want */
+  line-height: 1;        /* prevent extra vertical space */
+  display: inline-block; /* lets you nudge vertically if needed */
+}

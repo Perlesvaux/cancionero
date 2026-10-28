@@ -1,32 +1,53 @@
-# React + TypeScript + Vite
+# Cancionero
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<!--Here are some clean Unicode characters that blend well with UI text (no emoji color, no pictographic tone):-->
+<!---->
+<!--### 🎵 Songs-->
+<!--- **♪** — single eighth note (subtlest, most elegant)-->
+<!--- **♫** — beamed eighth notes (slightly more musical)-->
+<!--- **♬** — beamed sixteenth notes (busier, "playful")-->
+<!--- **𝄞** — G clef (very distinctive; renders well in most fonts)-->
+<!---->
+<!--**Recommendation:** `♪` for a subtle list-item marker, `♫` if you want it more obviously "music."-->
+<!---->
+<!--### 🙏 Prayers (common / traditional)-->
+<!--- **✝** — Latin cross-->
+<!--- **✞** — outlined cross-->
+<!--- **†** — dagger (typographically clean, Latin cross-like)-->
+<!--- **☧** — Chi-Rho (very "liturgical," distinctive)-->
+<!--- **☩** — Jerusalem cross-->
+<!---->
+<!--**Recommendation:** `✝` (or `☧` if you want something less generic). `†` is a nice low-key alternative that reads as a typographic mark rather than a symbol.-->
+<!---->
+<!--### 🏥 Prayers for the ill / infirm-->
+<!--- **✚** — heavy Greek cross (reads as "care/medical" without being a red cross)-->
+<!--- **⚕** — staff of Asclepius (medical, very classy)-->
+<!--- **☤** — staff of Caduceus (medical, very classy too)-->
+<!--- **♰** — outlined Latin cross-->
+<!--- **☩** — Jerusalem cross-->
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+<!---->
+<!--**Recommendation:** `⚕` for a "care for the sick" feel, or `✚` if you want it to sit closer to the other crosses visually.-->
+<!---->
+<!--### 📖 Readings-->
+<!--- **❧** — rotated floral heart / fleuron (elegant divider)-->
+<!--- **❦** — floral heart (same family, more ornate)-->
+<!--- **¶** — pilcrow (classic "text/document" mark)-->
+<!--- **§** — section sign-->
+<!--- **※** — reference mark (Japanese kome, clean and neutral)-->
+<!--- **⁂** — asterism (nice as a "reading" marker)-->
+<!--- **𝄢** — bass clef (if you want a music-adjacent "reading" feel — probably too clever)-->
+<!---->
+<!--**Recommendation:** `❧` for elegance, `¶` if you want an unambiguously "document/text" signal, or `⁂` if you want something distinctive.-->
+<!---->
+<!--### Quick pairing suggestion (consistent weight/feel)-->
+<!---->
+<!--| Section | Char | Why |-->
+<!--|---|---|---|-->
+<!--| Home | `⌂` | (yours) |-->
+<!--| Songs | `♪` | subtle, blends with text |-->
+<!--| Prayers | `✝` | universal, clean |-->
+<!--| Sick | `⚕` | reads "care" not "religion-only" |-->
+<!--| Readings | `❧` | elegant, non-emoji, typographic |-->
+<!---->
+<!--All of these are plain Unicode (BMP), render in system fonts on every platform, and stay monochrome so they inherit your text color.-->

@@ -12,7 +12,7 @@ export function Oraciones() {
 
   return (
     <OracionProvider initial={oraciones}>
-      <Indice items={oraciones} />
+      <Indice items={oraciones} title="Oraciones"/>
       <ListaDeOraciones />
     </OracionProvider>
   )
