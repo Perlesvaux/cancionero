@@ -1,6 +1,7 @@
 // Thanks2: https://www.w3schools.com/react/react_router.asp
 // src/App.tsx
 import './App.css'
+import { ScrollToTop } from './components';
 
 import {AudioContext, useAudioPlayer } from './hooks'
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -13,6 +14,7 @@ export default function App() {
 
   return (<AudioContext.Provider value={{player}}>
     <BrowserRouter>
+    <ScrollToTop />
       <nav>
         <NavLink to="/" className="nav-icon">♪</NavLink>
         <NavLink to="/oraciones"  className="nav-icon">☧</NavLink>

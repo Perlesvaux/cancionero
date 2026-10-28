@@ -10,3 +10,5 @@ export {CancionProvider, useCancionContext} from './ItemsContext'
 
 export {Portada} from './Portada'
 export {ContraPortada} from './ContraPortada'
+
+export {ScrollToTop} from './ScrollToTop'
