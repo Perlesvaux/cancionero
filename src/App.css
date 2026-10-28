@@ -213,6 +213,15 @@ article h2 {
   page-break-before: always; /* legacy support */
 }
 
+
+p {
+  /*background-color: red;*/
+  /*padding: 0;*/
+  margin: 0 0 0.9rem;
+
+}
+
+
 /* ---------- Print ---------- */
 @media print {
   :root {
@@ -233,6 +242,21 @@ article h2 {
 .smaller {
   font-size: 15pt;
 }
+
+
+
+
+
+ blockquote {
+    border-left-color: var(--accent);   /* your print accent is already red */
+    color: #000;
+    font-style: italic;
+  }
+  blockquote cite,
+  blockquote footer {
+    color: var(--accent);
+  }
+
 
   body {
     padding: 0;
@@ -715,7 +739,7 @@ blockquote {
 }
 
 blockquote p {
-  margin: 0 0 1rem;
+  margin: 0 0 0rem;
 }
 
 blockquote p:last-child {
