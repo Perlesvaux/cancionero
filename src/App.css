@@ -239,10 +239,27 @@ p {
     --interlineado:1.15em;
   }
 
-.smaller {
-  font-size: 15pt;
-}
 
+  .red-hue {
+    --fg:#C62D25;
+    --fg-muted:#C62D25;
+  }
+
+  .blue-hue {
+    --accent:#1F5C99;
+    --fg: #1F5C99;
+    --fg-muted:#1F5C99 ;
+  }
+
+  .green-hue {
+    --accent:#2E6B3A;
+    --fg: #2E6B3A;
+    --fg-muted:#2E6B3A ;
+  }
+
+  .printed-lectures {
+    font-size: 19pt;
+  }
 
 
 

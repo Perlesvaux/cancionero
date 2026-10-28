@@ -15,7 +15,7 @@ export function ListaDeLecturas({items}:ListaDeLecturasProps){
   
       <h2>
         <span className="print-only-inline">
-        {abc[index]}.{" "} 
+        {index+1}.{" "} 
         </span> 
         {nombre}
       </h2>
@@ -31,5 +31,13 @@ interface ListaDeLecturasProps {
 }
 
 
-export const abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
+//export const abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
 
+
+
+      //<h2>
+      //  <span className="print-only-inline">
+      //  {abc[index]}.{" "} 
+      //  </span> 
+      //  {nombre}
+      //</h2>
