@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Oración por un enfermo terminal",
+  nombre:"Por un enfermo terminal",
   cuerpo:`Señor Jesucristo,
 tú que venciste la muerte y abriste para nosotros las puertas del cielo,
 mira con ternura a tu hijo(a) [nombre del enfermo],
@@ -21,7 +21,6 @@ Gloria...
 
 } satisfies Lectura
 
-// dar_la_comunión_a_los_enfermos_en_su_casa
 
 
 

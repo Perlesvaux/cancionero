@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Oración por un Servidor (Coordinador, miembro de comunidad) de la Iglesia Enfermo",
+  nombre:"Por un Servidor (Coordinador, miembro de comunidad) de la Iglesia Enfermo",
   cuerpo:`Señor Jesús, Médico de los cuerpos y de las almas,
 hoy nos acercamos a ti con fe para pedirte por tu siervo/a [Nombre del enfermo],
 quien con tanto amor y dedicación ha servido a tu Iglesia y a tu pueblo.
@@ -23,7 +23,6 @@ Rezar un Padre Nuestro, un Ave María y un Gloria.
 
 } satisfies Lectura
 
-// dar_la_comunión_a_los_enfermos_en_su_casa
 
 
 

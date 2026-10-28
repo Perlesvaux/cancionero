@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Oración por un Niño enfermo",
+  nombre:"Por un Niño enfermo",
   cuerpo:`«Señor, tú invitaste a los niños a ir hacia ti para imponer sobre ellos tus manos y bendecirlos.
 Extiende, Señor, tu mano sobre este niño/a (mencionar su nombre) para aliviar su dolor y para librarlo de su enfermedad.
 Que nosotros sepamos cuidarlo con toda atención y diligencia.
@@ -11,7 +11,6 @@ Amén.»
 
 } satisfies Lectura
 
-// dar_la_comunión_a_los_enfermos_en_su_casa
 
 
 
