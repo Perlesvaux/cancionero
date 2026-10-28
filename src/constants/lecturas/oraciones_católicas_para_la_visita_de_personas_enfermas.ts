@@ -78,8 +78,14 @@ Amén.
 Rezar un Padre Nuestro, un Ave María y un Gloria.
 ### 10. Por un enfermo
 Santísimo Padre, médico celestial de nuestros cuerpos y almas, que has enviado a tu Hijo unigénito, nuestro Señor Jesucristo, para sanar nuestras dolencias y liberarnos de la muerte, sana a tu siervo (nombre del enfermo), de todo sufrimiento y restáurale en la salud por la gracia de tu Divino Hijo, por las oraciones de nuestra Santísima Reina la Siempre Virgen María, Madre de Dios, y de todos los santos; pues tú eres el manantial de toda curación, oh Señor, y te damos gracias, Padre, Hijo y Espíritu Santo, ahora y siempre, y por los siglos de los siglos. Amén.
+
+### 11. Oración Unción
+“¿Hay entre ustedes algún enfermo? Que llamen a los sacerdotes para que oren por él y lo unjan con aceite en el nombre del Señor. La oración hecha con fe salvará al que no puede levantarse y el Señor hará que se levante; y si ha cometido pecados, se le perdonarán” (Stgo 4, 14 – 15)
+
   `  
 
 } satisfies Lectura
+
+// dar_la_comunión_a_los_enfermos_en_su_casa
 
 
