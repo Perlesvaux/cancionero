@@ -16,7 +16,7 @@ export default {
 > sicut in caelo et in terra. 
 
 
-> **R:** Panem nostrum quotidianum da nobis hodie; 
+> Panem nostrum quotidianum da nobis hodie; 
 > 
 > et dimitte nobis debita nostra,
 > 

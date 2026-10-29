@@ -740,9 +740,9 @@ a:hover {
 }
 
 
-a:visited {
-  color: var(--accent);
-}
+/*a:visited {*/
+/*  color: var(--accent);*/
+/*}*/
 
 
 
@@ -795,6 +795,12 @@ blockquote cite::before {
   content: "— ";
 }
 
+.oraciones blockquote p::first-letter {
+  color: var(--accent);
+  font-weight: bolder;
+  text-transform: uppercase;
+  
+}
 
 
 .nav-icon {

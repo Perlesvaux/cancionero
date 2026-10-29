@@ -11,7 +11,7 @@ export default {
 > et Spirítui Sancto. 
 
 
-> **R:** Sicut erat in princípio, 
+> Sicut erat in princípio, 
 >
 > et nunc et semper 
 >

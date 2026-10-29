@@ -14,7 +14,7 @@ export default {
 > 
 > et benedíctus fructus ventris tui, Iesus. 
 
-> **R:** Sancta María, Mater Dei, 
+> Sancta María, Mater Dei, 
 > 
 > ora pro nobis peccatóribus, 
 > 

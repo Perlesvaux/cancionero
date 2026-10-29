@@ -31,7 +31,7 @@ export function ListaDeOraciones(){
       }
       </h2>
 
-      <section>
+      <section className="oraciones">
       {
         isLatin
           ?<Leyenda cuerpo={corpus}/>

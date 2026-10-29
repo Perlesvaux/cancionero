@@ -38,7 +38,7 @@ Ea, pues señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordios
 > 
 > Ora pro nobis, Sancta Dei Génitrix
 
-> **R:** Ut digni efficiámur promissiónibus Chrísti. Amen`,
+> Ut digni efficiámur promissiónibus Chrísti. Amen`,
   isLatin:true,
   kudos:"https://www.youtube.com/shorts/cm_66vddxNg",
 
