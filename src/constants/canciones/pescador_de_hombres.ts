@@ -26,12 +26,17 @@ export default {
 
 
   resumen:`Tú has venido a la orilla,
+
   No has buscado ni a sabios ni a ricos,
+
   Tan solo quieres que yo te siga.
 
   **Señor, me has mirado a los ojos.**
+
   **Sonriendo has dicho mi nombre.**
+
   **En la arena he dejado mi barca;**
+
   **Junto a Ti buscaré otro mar.**`,
 
 

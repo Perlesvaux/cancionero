@@ -36,14 +36,22 @@ export default {
   está preso, está enfermo, está desnudo,
   pero El nos va a juzgar por todo esto. **(Coro)**`,
 
-  resumen:`Su nombre es el Señor y pasa hambre
+  resumen:`
+  Su nombre es el Señor y pasa hambre
+  
   Y clama por la boca del hambriento
+  
   Y muchos que lo ven pasan de largo,
+  
   Acaso por llegar temprano al templo.
 
+  
   Su nombre es el Señor, un ser supremo
+  
   Y está en quien de justicia va sediento
+  
   Y muchos que lo ven pasan de largo,
+  
   A veces ocupados en sus rezos.
 
   **Con vosotros está y no le conoceis, con vosotros está, su nombre es el Señor (x2)**`,

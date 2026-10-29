@@ -29,9 +29,11 @@ export default {
 
 
   resumen:`Pues te llamo con fe viva, muestra Madre tu bondad;
+
   A mí vuelve compasiva tu mirada de piedad.
 
   **¡Oh María, Madre mía, oh consuelo del mortal!**
+
   **Amparadme y guiadme a la patria celestial. (x3)**`,
 
   isShort: false

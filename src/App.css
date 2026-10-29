@@ -267,6 +267,11 @@ h2.toc__title {
 
 
 
+.canciones p{
+  text-align: center;
+  line-height: var(--interlineado);
+}
+
 
  blockquote {
     border-left-color: var(--accent);   /* your print accent is already red */
@@ -315,16 +320,16 @@ h2.toc__title {
     display:flex !important;
   }
 
-  .linea::first-letter {
-    color: var(--accent);
-    font-weight: bolder;
-    font-size: var(--capital);
-  }
-
-  .linea {
-    text-align: center;
-    line-height: var(--interlineado);
-  }
+  /*.linea::first-letter {*/
+  /*  color: var(--accent);*/
+  /*  font-weight: bolder;*/
+  /*  font-size: var(--capital);*/
+  /*}*/
+  /**/
+  /*.linea {*/
+  /*  text-align: center;*/
+  /*  line-height: var(--interlineado);*/
+  /*}*/
 
   h2.toc__title {
     color: var(--accent);
@@ -801,6 +806,42 @@ blockquote cite::before {
   text-transform: uppercase;
   
 }
+
+
+.canciones p{
+  margin: 0;
+}
+.canciones p::first-letter {
+  color: var(--accent);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+.canciones hr,
+.oraciones hr {
+  border: 0;
+  height: 1px;
+  margin: 0.5rem auto;
+  max-width: 6rem;
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .nav-icon {

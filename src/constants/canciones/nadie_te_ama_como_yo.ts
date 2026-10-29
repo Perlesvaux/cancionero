@@ -48,14 +48,19 @@ export default {
 
 
   resumen:`Yo sé bien lo que has vivido
+
   Sé bien por qué has llorado
+
   Yo sé bien lo que has sufrido
+
   Pues de tu lado no me he ido
 
-  **Pues nadie te ama como yo**
-  **Pues nadie te ama como yo**
+  **Pues nadie te ama como yo (x2)**
+
   **Mira la cruz**
+
   **Esa es mi más grande prueba**
+
   **Nadie te ama como yo**`,
 
   isShort: false

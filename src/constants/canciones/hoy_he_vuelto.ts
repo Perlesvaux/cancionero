@@ -35,10 +35,15 @@ export default {
 
 
   resumen:`Hoy he vuelto, madre, a recordar
+
   Cuántas cosas dije ante tu altar
+
   Y al rezarte puedo comprender
+
   **Que una madre no se cansa de esperar**
+
   **Que una madre no se cansa de esperar**`,
+
 
 
   isShort: false

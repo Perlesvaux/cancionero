@@ -36,18 +36,27 @@ export default {
 
 
   resumen: `Si guardáis mis palabras
+
   Y como hermanos os amáis,
+
   Compartiréis con alegría
+
   El don de la fraternidad.
 
   Si os ponéis en camino,
+
   Sirviendo siempre a la verdad,
+
   Frutos daréis en abundancia;
+
   Mi amor se manifestará.
 
   **Como el Padre me amó,**
+
   **Yo os he amado.**
+
   **Permaneced en mi amor,**
+
   **Permaneced en mi amor. (bis)**`,
 
 

@@ -26,7 +26,7 @@ export function ListaDeCanciones(){
         {nombre}
       </h2>
 
-      <section>
+      <section className="canciones">
       {
         isShort
           ?<Letra letra={letra}/>

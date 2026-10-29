@@ -5,27 +5,31 @@ export default {
   nombre: "Santa María del Amén",
   letra: `**Madre de todos los hombres**
 
-    **Enséñanos a decir Amén**
+ **Enséñanos a decir Amén**
 
-    Cuando la noche se acerca
-    Y se oscurece la fe. 
+ Cuando la noche se acerca
+ 
+ Y se oscurece la fe. 
 
-    **Madre de todos los hombres, enséñanos a decir Amén**
+ **Madre de todos los hombres, enséñanos a decir Amén**
 
-    Cuando el dolor nos oprime
-    Y la ilusión ya no brilla. 
+ Cuando el dolor nos oprime
 
-    **Madre de todos los hombres, enséñanos a decir Amén**
+ Y la ilusión ya no brilla. 
 
-    Cuando aparece la Luz
-    Y nos sentimos felices. 
+ **Madre de todos los hombres, enséñanos a decir Amén**
 
-    **Madre de todos los hombres, enséñanos a decir Amén**
+ Cuando aparece la Luz
 
-    Cuando nos llegue la muerte
-    Y Tú nos lleves al cielo. 
+ Y nos sentimos felices. 
 
-    **Madre de todos los hombres, enséñanos a decir Amén**`
+ **Madre de todos los hombres, enséñanos a decir Amén**
+
+ Cuando nos llegue la muerte
+
+ Y Tú nos lleves al cielo. 
+
+ **Madre de todos los hombres, enséñanos a decir Amén**`
 ,
 
 
@@ -34,15 +38,19 @@ export default {
   **Enséñanos a decir Amén**
 
   Cuando la noche se acerca
+
   Y se oscurece la fe. **(Coro)**
 
   Cuando el dolor nos oprime
+
   Y la ilusión ya no brilla. **(Coro)**
 
   Cuando aparece la Luz
+
   Y nos sentimos felices. **(Coro)**
 
   Cuando nos llegue la muerte
+
   Y Tú nos lleves al cielo. **(Coro)**`,
 
   isShort: false

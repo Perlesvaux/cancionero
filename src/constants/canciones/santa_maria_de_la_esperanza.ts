@@ -30,12 +30,17 @@ export default {
 
 
   resumen:`Esperaste cuando todos vacilaban
+
   El triunfo de Jesús sobre la muerte
+  
   Y nosotros esperamos que su vida
+  
   Anime nuestro mundo para siempre.
 
   **Santa María de la Esperanza**
+  
   **Mantén el ritmo de nuestra espera**
+  
   **Mantén el ritmo de nuestra espera**`
 ,
 

@@ -30,13 +30,19 @@ export default {
 
 
   resumen:`Mientras recorres la vida
+
   Tú nunca solo estás
+
   Contigo por el camino
+
   Santa María va.
 
   **Ven con nosotros al caminar**
+
   **Santa María, ven**
+
   **Ven con nosotros al caminar**
+
   **Santa María, ven**`,
 
   isShort: false
