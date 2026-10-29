@@ -8,7 +8,6 @@ function RootLayout(){
 
   return(
     <AudioContext.Provider value={ {player }}>
-    <ScrollRestoration />
     <nav>
         <NavLink to="/" className="nav-icon">♬</NavLink>
         <NavLink to="/oraciones" className="nav-icon">☧</NavLink>
