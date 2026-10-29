@@ -40,6 +40,7 @@ Ea, pues señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordios
 
 > **R:** Ut digni efficiámur promissiónibus Chrísti. Amen`,
   isLatin:true,
+  kudos:"https://www.youtube.com/shorts/cm_66vddxNg",
 
 } satisfies Oracion
 

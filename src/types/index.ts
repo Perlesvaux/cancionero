@@ -17,6 +17,7 @@ export interface Oracion extends Item {
   corpus: string,
   nomen: string,
   isLatin:boolean,
+  kudos?:string,
 
 }
 

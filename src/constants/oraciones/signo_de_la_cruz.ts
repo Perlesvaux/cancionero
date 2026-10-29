@@ -24,6 +24,7 @@ En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén
 > et Spíritus Sancti. Amen.
 `,
   isLatin:true,
+  kudos:"https://www.youtube.com/shorts/PqKLYiuTDVk",
 } satisfies Oracion
 
 

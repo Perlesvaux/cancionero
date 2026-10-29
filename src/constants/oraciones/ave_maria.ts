@@ -20,5 +20,6 @@ export default {
 > 
 > nunc et in hora mortis nostræ. Amen.`,
   isLatin:true,
+  kudos:"https://www.youtube.com/shorts/8p4xuNnMdBs",
 } satisfies Oracion
 

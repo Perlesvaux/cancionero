@@ -9,11 +9,14 @@ export function ListaDeOraciones(){
   //const {items, setItems} = useOracionContext()
   const {items, setItems} = useOracionContext()
 
-  return <>{items.map(({ nombre, cuerpo, nomen, corpus, isLatin }, index) => (
+  return <>{items.map(({ nombre, cuerpo, nomen, corpus, isLatin, kudos }, index) => (
     <article key={nombre} id={slugify(nombre)}>
 
       <div className="song-controls">
         <a href="#toc"><button> ⌂ </button></a>
+
+        { kudos && <a href={kudos} target="_blank"><button>⌘</button></a> }
+
         <button onClick={() => setItems(flip(items, index, 'isLatin'))}>
           {isLatin ? 'A' : 'Æ'}
         </button>

@@ -64,6 +64,7 @@ y la vida eterna.`,
 
 `,
   isLatin:true,
+  kudos:"https://www.youtube.com/shorts/AudoEOcp3PI",
 } satisfies Oracion
 
 

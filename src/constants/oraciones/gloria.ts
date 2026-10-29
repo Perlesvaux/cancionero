@@ -19,6 +19,7 @@ export default {
 
 `,
   isLatin:true,
+  kudos:"https://www.youtube.com/shorts/XCzuYhDBAqM",
 } satisfies Oracion
 
 
