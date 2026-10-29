@@ -1,4 +1,3 @@
-//import {useRouteContext} from '../hooks'
 import type {IndiceProps} from '../types'
 import { slugify } from '../utils'
 
@@ -17,7 +16,3 @@ export function Indice({ items, title, listStyleType }:IndiceProps){
 }
 
 
-
-//export interface LetraProps {
-//  letra:Estrofa[],
-//} 

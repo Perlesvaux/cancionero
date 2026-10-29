@@ -472,9 +472,9 @@ h2.toc__title {
 }
 
 /* Compensate for sticky-less anchor jumps hidden under any future header */
-/*article {*/
-/*  scroll-margin-top: 1.5rem;*/
-/*}*/
+article {
+  scroll-margin-top: 1.5rem;
+}
 
 
 
