@@ -5,21 +5,66 @@ export default {
 
   nombre: "Si no tengo amor",
 letra: `
-Si no tengo amor no soy nada.
+Si yo no tengo amor,
+yo nada soy. Señor [bis]
 
-Nada soy si no tengo amor.
+El amor es compasivo,
+el amor es servicial,
+el amor no tiene envidia
+el amor no busca el mal.
 
-Nada soy, nada soy si no tengo amor. (repetitivo)
+El amor nunca se irrita,
+el amor no es descortés
+el amor no es egoísta,
+el amor nunca es doblez
+
+
+El amor disculpa todo,
+el amor es caridad,
+no se alegra de lo injusto
+sólo goza en la verdad.
+
+El amor soporta todo,
+el amor todo lo cree,
+el amor todo lo espera,
+el amor es siempre fiel.
+
+Nuestra fe, nuestra esperanza
+frente a Dios terminarán
+el amor es algo eterno
+nunca, nunca pasará.
 
 `,
 
 
   resumen:`
-Si no tengo amor no soy nada.
+El amor es compasivo,
 
-Nada soy si no tengo amor.
+el amor es servicial,
 
-Nada soy, nada soy si no tengo amor. (repetitivo)
+el amor no tiene envidia
+
+el amor no busca el mal.
+
+---
+
+El amor nunca se irrita,
+
+el amor no es descortés
+
+el amor no es egoísta,
+
+el amor nunca es doblez
+
+---
+
+El amor disculpa todo,
+
+el amor es caridad,
+
+no se alegra de lo injusto
+
+sólo goza en la verdad.
 
   `,
 
