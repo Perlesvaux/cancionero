@@ -232,7 +232,7 @@ p {
     --accent: #C62D25;
     --rule: #999;
     --shadow: none;
-    --main-text:20pt;
+    --main-text:21pt;
     --capital:24pt;
     --cover:50pt;
     --title:24pt;
@@ -261,9 +261,9 @@ h2.toc__title {
   --fg-muted:  #79A085;   /* muted sage green */
 }
 
-  .printed-lectures {
-    font-size: 19pt;
-  }
+  /*.printed-lectures {*/
+  /*  font-size: 19pt;*/
+  /*}*/
 
 
 
