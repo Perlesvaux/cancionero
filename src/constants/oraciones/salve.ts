@@ -13,32 +13,33 @@ Ea, pues señora, abogada nuestra, vuelve a nosotros esos tus ojos misericordios
 
 **R:** Para que seamos dignos de alcanzar las promesas de nuestro Señor Jesucristo.`,
   nomen: 'Salve Regina',
-  corpus: `Salve, Regina, 
+  corpus: `
+> Salve, Regina, 
+> 
+> Mater misericórdiae,
+> 
+> vita, dulcédo et spes nostra, salve.
+> 
+> Ad te clamámus, éxsules fílii Eva.
+> 
+> Ad te suspirámus geméntes et flentes
+> 
+> in hac lacrimárum valle. 
+> 
+> Eia ergo, advocáta nostra,
+> 
+> illos tuos misericórdes óculos ad nos convérte.
+> 
+> Et Iesum benedíctum fructum ventris tui,
+> 
+> nobis, post hoc exsílium, osténde.
+> 
+> O clemens, o pia, o dulcis Virgo Maríae!
+> 
+> Ora pro nobis, Sancta Dei Génitrix
 
-Mater misericórdiae,
-
-vita, dulcédo et spes nostra, salve.
-
-Ad te clamámus, éxsules fílii Eva.
-
-Ad te suspirámus geméntes et flentes
-
-in hac lacrimárum valle. 
-
-Eia ergo, advocáta nostra,
-
-illos tuos misericórdes óculos ad nos convérte.
-
-Et Iesum benedíctum fructum ventris tui,
-
-nobis, post hoc exsílium, osténde.
-
-O clemens, o pia, o dulcis Virgo Maríae!
-
-Ora pro nobis, Sancta Dei Génitrix
-
-**R:** Ut digni efficiámur promissiónibus Chrísti. Amen`,
-  isLatin:false,
+> **R:** Ut digni efficiámur promissiónibus Chrísti. Amen`,
+  isLatin:true,
 
 } satisfies Oracion
 

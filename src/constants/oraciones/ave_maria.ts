@@ -7,17 +7,18 @@ export default {
 **R:** Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.
   `,
   nomen: 'Ave, Maríæ',
-  corpus:`Ave, María, grátia plena, Dóminus tecum. 
+  corpus:`
+> Ave, María, grátia plena, Dóminus tecum. 
+> 
+> Benedícta tu in muliéribus, 
+> 
+> et benedíctus fructus ventris tui, Iesus. 
 
-Benedícta tu in muliéribus, 
-
-et benedíctus fructus ventris tui, Iesus. 
-
-**R:** Sancta María, Mater Dei, 
-
-ora pro nobis peccatóribus, 
-
-nunc et in hora mortis nostræ. Amen.`,
-  isLatin:false,
+> **R:** Sancta María, Mater Dei, 
+> 
+> ora pro nobis peccatóribus, 
+> 
+> nunc et in hora mortis nostræ. Amen.`,
+  isLatin:true,
 } satisfies Oracion
 
