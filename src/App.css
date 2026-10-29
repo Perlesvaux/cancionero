@@ -271,7 +271,7 @@ h2.toc__title {
  blockquote {
     border-left-color: var(--accent);   /* your print accent is already red */
     color: #000;
-    font-style: italic;
+    /*font-style: italic;*/
   }
   blockquote cite,
   blockquote footer {
@@ -756,7 +756,7 @@ blockquote {
   padding: 0 0 0 1.25rem;
   border-left: 3px solid var(--accent);
   color: var(--fg-muted);
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 blockquote p {
@@ -768,16 +768,16 @@ blockquote p:last-child {
 }
 
 /* Opening quotation mark in accent color, hanging in the margin */
-blockquote p:first-of-type::before {
-  content: "“";
-  color: var(--accent);
-  font-size: 1.6em;
-  line-height: 0;
-  vertical-align: -0.15em;
-  margin-right: 0.05em;
-  font-style: normal;
-  font-weight: 600;
-}
+/*blockquote p:first-of-type::before {*/
+/*  content: "“";*/
+/*  color: var(--accent);*/
+/*  font-size: 1.6em;*/
+/*  line-height: 0;*/
+/*  vertical-align: -0.15em;*/
+/*  margin-right: 0.05em;*/
+/*  font-style: normal;*/
+/*  font-weight: 600;*/
+/*}*/
 
 /* Attribution / source line (e.g. <cite> or last <p>) */
 blockquote cite,

@@ -47,7 +47,7 @@ export default {
 >
 > llegue también a mí
 >
-> y a mis seres queridos su Salvación.  **AMÉN**."
+> y a mis seres queridos su Salvación.  **AMÉN**.
   `  
 
 } satisfies Lectura
