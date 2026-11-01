@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Dar la comunión a los enfermos en su casa",
+  nombre:"Visita con comunión",
   cuerpo:`
 ### Recuerda… 
 

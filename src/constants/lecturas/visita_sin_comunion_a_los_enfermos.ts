@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Visita sin comunión a los enfermos",
+  nombre:"Visita sin comunión",
   cuerpo:`
 ### 1. Traer
 -  Un Crucifijo, si es posible con su basecita

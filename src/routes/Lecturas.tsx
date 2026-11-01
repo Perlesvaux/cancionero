@@ -5,7 +5,7 @@ export function Lecturas() {
 
   return (
     <>
-      <Indice items={lecturas} title="Lecturas" />
+      <Indice items={lecturas} title="Subsidios" />
       <ListaDeLecturas items={lecturas}/>
     </>
   )
