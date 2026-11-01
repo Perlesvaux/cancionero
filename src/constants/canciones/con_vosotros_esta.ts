@@ -14,7 +14,7 @@ export default {
   Y muchos que lo ven pasan de largo,
   A veces ocupados en sus rezos.
 
-  **Con vosotros está y no le conoceis, con vosotros está, su nombre es el Señor (x2)**
+  **Con vosotros está y no le conocéis, con vosotros está, su nombre es el Señor (x2)**
 
   Su nombre es el Señor y está desnudo,
   La ausencia del amor hiela sus huesos
@@ -54,7 +54,7 @@ export default {
   
   A veces ocupados en sus rezos.
 
-  **Con vosotros está y no le conoceis, con vosotros está, su nombre es el Señor (x2)**`,
+  **Con vosotros está y no le conocéis, con vosotros está, su nombre es el Señor (x2)**`,
 
   isShort: false
 

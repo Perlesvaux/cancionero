@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Martires Pasionistas",
+  nombre:"Mártires Pasionistas",
   cuerpo:`
 Para que vean el gran aprecio y valor que daban a la Eucaristía nuestros Hermanos Pasionistas, Mártires de Daimiel, lean y mediten este mensaje que el Superior, P. Nicéforo, les dirigió en la iglesia del convento momentos antes de darles la Sagrada Comunión, con la cual fueron bien fortalecidos para entregar la vida por Jesús y por la Iglesia: 
 
