@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Oración de los enfermos por las misiones pasionistas",
+  nombre:"Por las misiones pasionistas",
   cuerpo:`
 > **MADRE DE LA SANTA ESPERANZA,**
 >

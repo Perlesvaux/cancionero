@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Selección Textos Bíblicos",
+  nombre:"Selección de textos bíblicos",
   cuerpo:`
 
 **1.** En aquel tiempo Jesús dijo: «Vengan a mí todos los que andan fatigados y agobiados, y yo les daré alivio. Tomen mi yugo sobre ustedes y aprendan de mí, que soy manso y humilde de corazón, y encontrarán descanso, porque mi yugo es suave y mi carga ligera». (Mt 11, 28 . 30) 
@@ -28,6 +28,10 @@ Todo el mundo puede verlo andar y alabar a Dios” (Hec 3, 1 – 9)
 ---
 
 **6.** “El Espíritu del Señor está sobre mí; Él me ha ungido para dar buenas nuevas a los pobres; Me ha enviado a sanar a los quebrantados de corazón; a pregonar libertad a los cautivos, y vista a los ciegos; a poner en libertad a los oprimidos; a predicar el año de gracia del Señor” (Lc 4, 18 – 19)
+
+---
+
+**7.** “¿Hay entre ustedes algún enfermo? Que llamen a los sacerdotes para que oren por él y lo unjan con aceite en el nombre del Señor. La oración hecha con fe salvará al que no puede levantarse y el Señor hará que se levante; y si ha cometido pecados, se le perdonarán” (Stgo 4, 14 – 15)
 
 
 

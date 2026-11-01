@@ -2,7 +2,7 @@
 import type {Lectura} from '../../types'
 
  export default {
-    nombre:"Oracion Por Un Enfermo", 
+    nombre:"Oracion por un enfermo", 
     cuerpo:`**Nota:** Se invita a los presentes a unirse en la oración.
 
 ### 1. Saludo

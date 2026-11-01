@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Oración a San Rafael (Patrono de los enfermos)",
+  nombre:"A San Rafael (patrono de los enfermos)",
   cuerpo:`
 ¡Arcángel Rafael!:
 Protector de peregrinos, viajeros y caminantes...

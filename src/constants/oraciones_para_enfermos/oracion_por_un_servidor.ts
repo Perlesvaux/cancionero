@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Por un Servidor (Coordinador, miembro de comunidad) de la Iglesia Enfermo",
+  nombre:"Por un servidor (coordinador, miembro de comunidad) de la iglesia enfermo",
   cuerpo:`Señor Jesús, Médico de los cuerpos y de las almas,
 hoy nos acercamos a ti con fe para pedirte por tu siervo/a [Nombre del enfermo],
 quien con tanto amor y dedicación ha servido a tu Iglesia y a tu pueblo.

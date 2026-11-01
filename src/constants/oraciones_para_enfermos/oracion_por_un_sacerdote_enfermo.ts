@@ -1,7 +1,7 @@
 import type {Lectura} from '../../types'
 
 export default {
-  nombre:"Por un Sacerdote Enfermo",
+  nombre:"Por un sacerdote enfermo",
   cuerpo:`Señor Jesús, Médico de los cuerpos y de las almas,
 te pedimos con fe por tu siervo, el Padre [Nombre del Sacerdote],
 a quien has llamado a compartir tu único y eterno Sacerdocio.
