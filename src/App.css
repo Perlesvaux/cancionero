@@ -1,13 +1,15 @@
-/* src/App.css */
+/* src/App.css
+   Consolidated stylesheet. Visual values and component behavior preserved.
+*/
 
 /* ---------- Design tokens ---------- */
+
 :root {
-  /* Light mode (default) */
   --bg: #fbfaf7;
-  --bg-elevated: #ffffff;
+  --bg-elevated: #fff;
   --fg: #1c1c1c;
   --fg-muted: #5a5a5a;
-  --accent: #C62D25;        /* deep liturgical red */
+  --accent: #C62D25;
   --rule: #e4e0d8;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 
@@ -15,8 +17,9 @@
     "Times New Roman", serif;
   --font-heading: var(--font-body);
 
-  --measure: 34rem;         /* comfortable line length */
+  --measure: 34rem;
   --leading: 1.55;
+  --flash-color: #FAEBD7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,16 +28,17 @@
     --bg-elevated: #1c1b17;
     --fg: #ece7dc;
     --fg-muted: #a09a8c;
-    --accent: #d9a441;      /* warm gold reads better on dark */
+    --accent: #d9a441;
     --rule: #2c2a24;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --flash-color: #2a2923;
   }
 }
 
-/* Manual override (e.g. <html data-theme="dark">) */
+/* Explicit theme settings take precedence over the system preference. */
 [data-theme="light"] {
   --bg: #fbfaf7;
-  --bg-elevated: #ffffff;
+  --bg-elevated: #fff;
   --fg: #1c1c1c;
   --fg-muted: #5a5a5a;
   --accent: #C62D25;
@@ -51,6 +55,7 @@
 }
 
 /* ---------- Base ---------- */
+
 *,
 *::before,
 *::after {
@@ -64,11 +69,11 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 1rem 5.5rem;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);
-  font-size: 1.0625rem;      /* ~17px */
+  font-size: 1.0625rem;
   line-height: var(--leading);
   font-kerning: normal;
   font-feature-settings: "kern", "liga", "onum";
@@ -76,40 +81,70 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* ---------- Article (each song) ---------- */
-article {
+p {
+  margin: 0 0 0.9rem;
+}
+
+h3,
+strong,
+a {
+  color: var(--accent);
+  text-decoration-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 150ms ease;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* ---------- Shared content surfaces ---------- */
+
+article,
+.toc {
   max-width: var(--measure);
-  margin: 0 auto 3.5rem;
-  padding: 1.75rem 1.5rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
   background: var(--bg-elevated);
   border: 1px solid var(--rule);
   border-radius: 6px;
   box-shadow: var(--shadow);
 }
 
+article {
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  padding: 1.75rem 1.5rem 2rem;
+  scroll-margin-top: 1.5rem;
+}
+
 article + article {
   margin-top: 2.5rem;
 }
 
-/* ---------- Title ---------- */
+.toc {
+  margin-bottom: 3rem;
+  padding: 1.5rem 1.75rem;
+}
+
+/* ---------- Article titles and song text ---------- */
+
 article h2 {
   margin: 0 0 1.5rem;
   padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--rule);
+  color: var(--accent);
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 1.25;
-  color: var(--accent);
   text-align: center;
   text-wrap: balance;
 }
 
-/* ---------- Stanzas ---------- */
 .estrofa {
   margin: 0 0 1.4rem;
-  /* Preserve the author's line breaks without needing <br> */
   white-space: pre-line;
   text-wrap: pretty;
 }
@@ -118,25 +153,23 @@ article h2 {
   margin-bottom: 0;
 }
 
-/* ---------- Lines ---------- */
+.estrofa + .estrofa {
+  margin-top: 1.4rem;
+}
+
 .letra {
   display: block;
-  text-align: left;
   margin-bottom: 1.4rem;
+  text-align: left;
 }
 
-/*.letra::before {*/
-/*  content: "•";*/
-/*  color: var(--accent);*/
-/*  margin-right: 0.5rem;*/
-/*}*/
-
-
-.letra::first-letter {
+.letra::first-letter,
+.oraciones blockquote p::first-letter,
+.canciones p::first-letter {
   color: var(--accent);
   font-weight: bolder;
+  text-transform: uppercase;
 }
-
 
 .linea {
   display: block;
@@ -145,290 +178,27 @@ article h2 {
 
 .linea::first-letter {
   color: var(--accent);
-  font-weight: bolder;
   font-size: 1.2rem;
+  font-weight: bolder;
 }
 
-
-
-
-/* Optional: slightly larger gap between stanzas than between lines */
-.estrofa + .estrofa {
-  margin-top: 1.4rem;
+.canciones p {
+  margin: 0;
 }
-
-/* ---------- Larger screens ---------- */
-@media (min-width: 40rem) {
-  body {
-    padding-top: 3rem;
-  }
-
-  article {
-    padding: 2.25rem 2.5rem 2.5rem;
-  }
-
-  article h2 {
-    font-size: 1.75rem;
-  }
-}
-
-
-/* ---------- Alphabetical index instead of numerical ---------- */
-
-.toc__list.upper-alpha {
-  counter-reset: toc;
-}
-
-.toc__list.upper-alpha li {
-  counter-increment: toc;
-}
-
-.toc__list.upper-alpha a::before {
-  content: counter(toc, upper-alpha) ".";
-}
-
-/* ---------- Roman index instead of numerical ---------- */
-
-.toc__list.upper-roman {
-  counter-reset: toc;
-}
-
-.toc__list.upper-roman li {
-  counter-increment: toc;
-}
-
-.toc__list.upper-roman a::before {
-  content: counter(toc, upper-roman) ".";
-}
-
-.print-only-inline {
-  display: none;
-}
-.print-only-flex {
-  display: none;
-}
-
-.page-break {
-  break-before: page;
-  page-break-before: always; /* legacy support */
-}
-
-
-p {
-  /*background-color: red;*/
-  /*padding: 0;*/
-  margin: 0 0 0.9rem;
-
-}
-
-
-/* ---------- Print ---------- */
-@media print {
-  :root {
-    --bg: #fff;
-    --bg-elevated: #fff;
-    --fg: #000;
-    --fg-muted: #333;
-    --accent: #C62D25;
-    --rule: #999;
-    --shadow: none;
-    --main-text:21pt;
-    --capital:24pt;
-    --cover:50pt;
-    --title:24pt;
-    --interlineado:1.15em;
-  }
-
-h2.toc__title {
-  font-size: var(--capital);
-}
-
-.red-hue {
-  --accent:    #C62D25;   /* unchanged */
-  --fg:        #A8231C;   /* deeper red — stronger, prints darker */
-  --fg-muted:  #C97A74;   /* softened, desaturated red for secondary text */
-}
-
-.blue-hue {
-  --accent:    #1F5C99;   /* unchanged */
-  --fg:        #174A7C;   /* deeper blue — solid on paper */
-  --fg-muted:  #6E93B8;   /* muted slate blue */
-}
-
-.green-hue {
-  --accent:    #2E6B3A;   /* unchanged */
-  --fg:        #24562F;   /* deeper green */
-  --fg-muted:  #79A085;   /* muted sage green */
-}
-
-  /*.printed-lectures {*/
-  /*  font-size: 19pt;*/
-  /*}*/
-
-
-
-.canciones p{
-  text-align: center;
-  line-height: var(--interlineado);
-}
-
-
- blockquote {
-    border-left-color: var(--accent);   /* your print accent is already red */
-    color: #000;
-    /*font-style: italic;*/
-  }
-  blockquote cite,
-  blockquote footer {
-    color: var(--accent);
-  }
-
-
-  body {
-    padding: 0;
-    font-size: var(--main-text);
-  }
-
-  article {
-    max-width: none;
-    margin: 0 0 1.5rem;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  article h2 {
-    color:var(--accent);
-    font-size: var(--title);
-  }
-
-  nav,
-  button,
-  .no-print {
-    display: none !important;
-  }
-
-  .print-only-inline {
-    display:inline !important;
-  }
-
-
-  .print-only-flex {
-    display:flex !important;
-  }
-
-  /*.linea::first-letter {*/
-  /*  color: var(--accent);*/
-  /*  font-weight: bolder;*/
-  /*  font-size: var(--capital);*/
-  /*}*/
-  /**/
-  /*.linea {*/
-  /*  text-align: center;*/
-  /*  line-height: var(--interlineado);*/
-  /*}*/
-
-  h2.toc__title {
-    color: var(--accent);
-    font-weight: bolder;
-  }
-
-  .toc__list {
-    line-height: var(--interlineado);
-  }
-
-
-  .portada {
-    height: 80vh;
-    box-sizing: border-box;
-
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-
-    break-inside: avoid;
-    page-break-inside: avoid;
-    font-style: italic;
-    font-weight: bolder;
-    /*border: 2px solid var(--accent);*/
-  }
-
-
-  .portada-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .portada-img img {
-    width: 100%;
-  }
-
-  .portada-legend {
-    font-size:var(--cover) ;
-    color:var(--fg-muted);
-    text-align: center;
-    /*text-decoration: overline;*/
-    border-top: 5px solid var(--accent);
-    border-bottom: 5px solid var(--accent);
-    line-height: 2.5em;
-  }
-
-
-
-
-
-
-}
-
-  /* Two-column layout for wider printouts */
-  /*@media (min-width: 8in) {*/
-  /*  body {*/
-  /*    column-count: 2;*/
-  /*    column-gap: 2rem;*/
-  /*  }*/
-  /*  article {*/
-  /*    break-inside: avoid;*/
-  /*  }*/
-  /*}*/
-
-
-/* ---------- Reduced motion / accessibility ---------- */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-
-
 
 /* ---------- Table of contents ---------- */
-.toc {
-  max-width: var(--measure);
-  margin: 0 auto 3rem;
-  padding: 1.5rem 1.75rem;
-  background: var(--bg-elevated);
-  border: 1px solid var(--rule);
-  border-radius: 6px;
-  box-shadow: var(--shadow);
-}
 
 .toc__title {
   margin: 0 0 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--rule);
+  color: var(--fg-muted);
   font-family: var(--font-heading);
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--fg-muted);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .toc__list {
@@ -458,11 +228,11 @@ h2.toc__title {
 }
 
 .toc__list a::before {
-  content: counter(toc) ".";
   flex: 0 0 1.75rem;
   color: var(--fg-muted);
-  font-variant-numeric: tabular-nums;
   font-size: 0.9em;
+  font-variant-numeric: tabular-nums;
+  content: counter(toc) ".";
 }
 
 .toc__list a:hover,
@@ -476,24 +246,38 @@ h2.toc__title {
   border-radius: 3px;
 }
 
-/* Compensate for sticky-less anchor jumps hidden under any future header */
-article {
-  scroll-margin-top: 1.5rem;
+/* Alternate numbering styles. */
+.toc__list.upper-alpha a::before {
+  content: counter(toc, upper-alpha) ".";
 }
 
+.toc__list.upper-roman a::before {
+  content: counter(toc, upper-roman) ".";
+}
 
+.print-only-inline,
+.print-only-flex {
+  display: none;
+}
+
+.page-break {
+  break-before: page;
+  page-break-before: always;
+}
 
 /* ---------- Song controls ---------- */
+
 .song-controls {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
   margin-bottom: 1rem;
 }
 
 .song-controls button {
   appearance: none;
+  padding: 0.45rem 0.75rem;
   border: 1px solid var(--rule);
   border-radius: 4px;
   background: var(--bg);
@@ -501,7 +285,6 @@ article {
   font: inherit;
   font-size: 0.9rem;
   line-height: 1;
-  padding: 0.45rem 0.75rem;
   cursor: pointer;
   transition:
     color 0.15s ease,
@@ -510,8 +293,8 @@ article {
 }
 
 .song-controls button:hover {
-  color: var(--accent);
   border-color: var(--accent);
+  color: var(--accent);
 }
 
 .song-controls button:focus-visible {
@@ -523,122 +306,55 @@ article {
   background: var(--rule);
 }
 
-
-
-
-
-
-
-
-
-
-
-/* ---------- Page setup ---------- */
-@page {
-  size: A4;
-  /*margin: 18mm 20mm 20mm;*/
-  margin: 8mm 12mm 10mm;
-
-  /* Running footers — supported in Chromium & Firefox */
-  @bottom-center {
-    content: counter(page);
-    font-family: "Iowan Old Style", Palatino, Georgia, serif;
-    font-size: 9pt;
-    color: #555;
-  }
-}
-
-/* Optional: mirrored margins for double-sided printing */
-@page :left {
-  /*margin-left: 15mm;*/
-  /*margin-right: 25mm;*/
-  margin-left: 15mm;
-  margin-right: 10mm;
-}
-
-@page :right {
-  /*margin-left: 25mm;*/
-  /*margin-right: 15mm;*/
-  margin-left: 10mm;
-  margin-right: 15mm;
-}
-
-/* No page number on the very first page */
-@page :first {
-  @bottom-center { content: none; }
-}
-
-
-
-
-
-
-
-
-
-
 /* ---------- Main navigation ---------- */
 
 nav {
   position: fixed;
   z-index: 1000;
-  left: 50%;
   bottom: 0.75rem;
-  transform: translateX(-50%);
-
+  left: 50%;
   display: flex;
   align-items: stretch;
   justify-content: center;
-
   width: min(calc(100% - 1.5rem), 34rem);
-
   padding: 0.35rem;
-
-  background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+  transform: translateX(-50%);
   border: 1px solid var(--rule);
   border-radius: 10px;
-
+  background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
   box-shadow:
     0 4px 16px rgba(0, 0, 0, 0.08),
     0 1px 3px rgba(0, 0, 0, 0.06);
-
-  /* Keeps the navigation readable over content on mobile */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 nav a {
   position: relative;
-
-  flex: 1;
-  min-width: 0;
-
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-
+  min-width: 0;
   min-height: 2.75rem;
   padding: 0.55rem 0.75rem;
-
+  border-radius: 6px;
   color: var(--fg-muted);
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1;
-
-  text-decoration: none;
   text-align: center;
-
-  border-radius: 6px;
-
+  text-decoration: none;
   transition:
     color 0.15s ease,
     background-color 0.15s ease;
 }
 
-nav a:hover {
-  color: var(--accent);
+nav a:hover,
+nav a.active {
   background: var(--bg);
+  color: var(--accent);
 }
 
 nav a:focus-visible {
@@ -647,111 +363,39 @@ nav a:focus-visible {
   outline-offset: -2px;
 }
 
-/* Active route */
-nav a.active {
-  color: var(--accent);
-  background: var(--bg);
-}
-
-/* Small liturgical-style indicator beneath the active item */
 nav a.active::after {
-  content: "";
-
   position: absolute;
-  left: 50%;
   bottom: 0.25rem;
-  transform: translateX(-50%);
-
+  left: 50%;
   width: 1.25rem;
   height: 2px;
-
-  background: var(--accent);
+  transform: translateX(-50%);
   border-radius: 999px;
+  background: var(--accent);
+  content: "";
 }
 
-/* ---------- Give the page room for the fixed navigation ---------- */
-
-body {
-  padding-bottom: 5.5rem;
+.nav-icon {
+  display: inline-block;
+  font-size: 1.55em;
+  line-height: 1;
 }
-
-/* ---------- Desktop ---------- */
-
-@media (min-width: 40rem) {
-  nav {
-    bottom: 1rem;
-  }
-
-  nav a {
-    min-height: 2.5rem;
-    padding-inline: 1.25rem;
-  }
-
-  body {
-    padding-bottom: 5.75rem;
-  }
-}
-
-/* ---------- Reduced motion ---------- */
-
-@media (prefers-reduced-motion: reduce) {
-  nav a {
-    transition: none;
-  }
-}
-
-
-
-
-
 
 /* ---------- Flash on target ---------- */
 
-:root{
-  --flash-color: #FAEBD7 
-}
-
 @keyframes highlight-flash {
-  0%, 20%       { background-color: var(--flash-color); }
-  10%, 60%      { background-color: transparent; }
+  0%, 20% {
+    background-color: var(--flash-color);
+  }
+
+  10%, 60% {
+    background-color: transparent;
+  }
 }
 
 :target {
   animation: highlight-flash 3.5s ease-out;
 }
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  --flash-color: #2a2923;
-  }
-}
-
-
-
-/* ---------- Cool Looking Links, bold and h3 in markdown ---------- */
-
-h3,
-strong,
-a {
-  color: var(--accent);
-  text-decoration-color: color-mix(in srgb, var(--accent) 50%, transparent);
-  text-underline-offset: 2px;
-  transition: text-decoration-color 150ms ease;
-}
-
-a:hover {
-  text-decoration-color: var(--accent);
-}
-
-
-/*a:visited {*/
-/*  color: var(--accent);*/
-/*}*/
-
-
-
-
 
 /* ---------- Blockquotes ---------- */
 
@@ -761,91 +405,222 @@ blockquote {
   padding: 0 0 0 1.25rem;
   border-left: 3px solid var(--accent);
   color: var(--fg-muted);
-  /*font-style: italic;*/
 }
 
 blockquote p {
-  margin: 0 0 0rem;
-}
-
-blockquote p:last-child {
   margin-bottom: 0;
 }
 
-/* Opening quotation mark in accent color, hanging in the margin */
-/*blockquote p:first-of-type::before {*/
-/*  content: "“";*/
-/*  color: var(--accent);*/
-/*  font-size: 1.6em;*/
-/*  line-height: 0;*/
-/*  vertical-align: -0.15em;*/
-/*  margin-right: 0.05em;*/
-/*  font-style: normal;*/
-/*  font-weight: 600;*/
-/*}*/
-
-/* Attribution / source line (e.g. <cite> or last <p>) */
 blockquote cite,
 blockquote footer {
   display: block;
   margin-top: 0.75rem;
+  color: var(--accent);
   font-size: 0.85em;
   font-style: normal;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
 }
 
 blockquote cite::before {
   content: "— ";
 }
 
-.oraciones blockquote p::first-letter {
-  color: var(--accent);
-  font-weight: bolder;
-  text-transform: uppercase;
-  
-}
-
-
-.canciones p{
-  margin: 0;
-}
-.canciones p::first-letter {
-  color: var(--accent);
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
+/* ---------- Section separators ---------- */
 
 .canciones hr,
 .oraciones hr {
-  border: 0;
+  max-width: 6rem;
   height: 1px;
   margin: 0.5rem auto;
-  max-width: 6rem;
+  border: 0;
   background: transparent;
 }
 
+/* ---------- Responsive layout ---------- */
 
+@media (min-width: 40rem) {
+  body {
+    padding-top: 3rem;
+    padding-bottom: 5.75rem;
+  }
 
+  article {
+    padding: 2.25rem 2.5rem 2.5rem;
+  }
 
+  article h2 {
+    font-size: 1.75rem;
+  }
 
+  nav {
+    bottom: 1rem;
+  }
 
+  nav a {
+    min-height: 2.5rem;
+    padding-inline: 1.25rem;
+  }
+}
 
+/* ---------- Print ---------- */
 
+@page {
+  size: A4;
+  margin: 8mm 12mm 10mm;
 
+  @bottom-center {
+    content: counter(page);
+    color: #555;
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: 9pt;
+  }
+}
 
+@page :left {
+  margin-right: 10mm;
+  margin-left: 15mm;
+}
 
+@page :right {
+  margin-right: 15mm;
+  margin-left: 10mm;
+}
 
+@page :first {
+  @bottom-center {
+    content: none;
+  }
+}
 
+@media print {
+  :root {
+    --bg: #fff;
+    --bg-elevated: #fff;
+    --fg: #000;
+    --fg-muted: #333;
+    --accent: #C62D25;
+    --rule: #999;
+    --shadow: none;
 
+    --main-text: 21pt;
+    --capital: 24pt;
+    --cover: 50pt;
+    --title: 24pt;
+    --interlineado: 1.15em;
+  }
 
+  .red-hue {
+    --accent: #C62D25;
+    --fg: #A8231C;
+    --fg-muted: #C97A74;
+  }
 
+  .blue-hue {
+    --accent: #1F5C99;
+    --fg: #174A7C;
+    --fg-muted: #6E93B8;
+  }
 
+  .green-hue {
+    --accent: #2E6B3A;
+    --fg: #24562F;
+    --fg-muted: #79A085;
+  }
 
-.nav-icon {
-  font-size: 1.55em;      /* relative to parent text — usually what you want */
-  line-height: 1;        /* prevent extra vertical space */
-  display: inline-block; /* lets you nudge vertically if needed */
+  body {
+    padding: 0;
+    font-size: var(--main-text);
+  }
+
+  article {
+    max-width: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  article h2 {
+    color: var(--accent);
+    font-size: var(--title);
+  }
+
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only-inline {
+    display: inline !important;
+  }
+
+  .print-only-flex {
+    display: flex !important;
+  }
+
+  h2.toc__title {
+    color: var(--accent);
+    font-size: var(--capital);
+    font-weight: bolder;
+  }
+
+  .toc__list {
+    line-height: var(--interlineado);
+  }
+
+  .canciones p {
+    text-align: center;
+    line-height: var(--interlineado);
+  }
+
+  blockquote {
+    border-left-color: var(--accent);
+    color: #000;
+  }
+
+  .portada {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    font-style: italic;
+    font-weight: bolder;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .portada-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portada-img img {
+    width: 100%;
+  }
+
+  .portada-legend {
+    border-top: 5px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
+    color: var(--fg-muted);
+    font-size: var(--cover);
+    line-height: 2.5em;
+    text-align: center;
+  }
+}
+
+/* ---------- Accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

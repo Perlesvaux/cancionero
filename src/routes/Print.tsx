@@ -13,21 +13,24 @@ import {
     return <>
     <CancionProvider initial={canciones}>
 
-      <div className="red-hue">
-        <Indice items={canciones} title="Canciones" />
+      <div className="blue-hue">
+        <Indice items={lecturas}  title="Subsidios"  />
       </div>
 
       <div className="green-hue">
         <Indice items={oraciones_para_enfermos} title="Oraciones"  />
       </div>
 
-      <div className="blue-hue">
-        <Indice items={lecturas}  title="Lecturas"  />
+      <div className="red-hue">
+        <Indice items={canciones} title="Canciones" />
       </div>
+
 
       < PageBreak />
 
-      <ListaDeCanciones />
+      <div className="printed-lectures blue-hue">
+        <ListaDeLecturas items={lecturas}/>
+      </div>
 
       < PageBreak />
 
@@ -35,9 +38,7 @@ import {
         <ListaDeLecturas items={oraciones_para_enfermos} />
       </div>
 
-      <div className="printed-lectures blue-hue">
-        <ListaDeLecturas items={lecturas}/>
-      </div>
+      <ListaDeCanciones />
 
     </CancionProvider>
     </>
