@@ -5,8 +5,9 @@ export default {
 
   nombre: "Un mandamiento nuevo",
 letra: `
-Un mandamiento nuevo nos da el Señor,
-que nos amemos todos como nos ama Dios.
+**Un mandamiento nuevo nos da el Señor,**
+
+**que nos amemos todos como nos ama Dios.**
 
 Como a mí me ama el Padre,
 así yo los he amado.
@@ -50,23 +51,12 @@ Cristo a todos nos anima.
   resumen:`
 Perdonemos al hermano
 
-como Cristo ha enseñado.
+como Cristo ha ordenado.
 
-En Jesús somos hermanos
+**Un mandamiento nuevo nos da el Señor,**
 
-si de veras perdonamos.
+**que nos amemos todos como nos ama Dios.**
 
-Al comer el mismo pan
-
-en unión siempre vivamos.
-
-En la vida y en la muerte
-
-Dios nos ama para siempre.
-
-En trabajos y en fatigas
-
-Cristo a todos nos anima.
   `,
 
 

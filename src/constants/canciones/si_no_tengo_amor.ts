@@ -5,8 +5,8 @@ export default {
 
   nombre: "Si no tengo amor",
 letra: `
-Si yo no tengo amor,
-yo nada soy. Señor [bis]
+**Si yo no tengo amor,**
+**yo nada soy. Señor (x2)**
 
 El amor es compasivo,
 el amor es servicial,
@@ -48,23 +48,8 @@ el amor no busca el mal.
 
 ---
 
-El amor nunca se irrita,
-
-el amor no es descortés
-
-el amor no es egoísta,
-
-el amor nunca es doblez
-
----
-
-El amor disculpa todo,
-
-el amor es caridad,
-
-no se alegra de lo injusto
-
-sólo goza en la verdad.
+**Si yo no tengo amor,**
+**yo nada soy. Señor (x2)**
 
   `,
 

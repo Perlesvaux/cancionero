@@ -3,7 +3,7 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: " Me pongo en tus manos",
+  nombre: "Me pongo en tus manos",
 letra: `
 Me pongo en tus manos, oh Señor,
 
@@ -58,23 +58,13 @@ enséñame a decirte siempre amén.
 
 ---
 
-Tú no has venido a ser servido,
+Me pongo en tus manos, oh Señor,
 
-Tú te hiciste esclavo por amor,
+te entrego toda mi vida,
 
-dame un corazón grande y sencillo,
+no me sueltes nunca Señor,
 
-dame un corazón de servidor.
-
----
-
-Guarda entre tus manos mi pobreza,
-
-guía mi camino con tu Luz,
-
-quiero estar de pie junto a María
-
-abrazando el leño de tu Cruz.
+mi fuerza eres Tú, y mi alegría.
 
 
   `,

@@ -3,7 +3,7 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Junto a ti, María,",
+  nombre: "Junto a ti, María",
 letra: `
 como un niño quiero estar,
 tómame en tus brazos,

@@ -3,7 +3,7 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Cristo vencedor de la muerte",
+  nombre: "Quién es éste que viene",
 letra: `
 ¿Quién es éste que viene,
 
@@ -79,30 +79,25 @@ glorificado en la resurrección. Amen.
 
 
   resumen:`
-Este es Cristo, el Señor,
-
-convocado a la muerte,
-
-glorificado en la resurrección.
-
----
-
 Se durmió con los muertos,
 
 y reina entre los vivos;
 
 no le venció la fosa,
 
-porque el Señor sostuvo a su Elegido.
+porque el Señor 
+
+sostuvo a su Elegido.
 
 ---
 
-Este es Cristo, el Señor,
+**Este es Cristo, el Señor,**
 
-convocado a la muerte,
+**convocado a la muerte (x2),**
 
-glorificado en la resurrección.
+---
 
+**glorificado en la resurrección.**
 
   `,
 

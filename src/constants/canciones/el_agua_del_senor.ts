@@ -38,36 +38,13 @@ torrentes de agua viva.
 
 
   resumen:`
-El que beba de esta agua
+Te doy gracias, tu me cambias,
 
-jamás tendrá sed.
+tu me llenas me has salvado (x2)
 
-El que beba de esta agua
+**El agua del Señor, sanó mi enfermedad**,
 
-jamás tendrá sed.
-
----
-
-Sobre ti derramaré
-
-el agua que es mi vida,
-
-y tu corazón de piedra
-
-en amor transformaré.
-
----
-
-El que crea en mi palabra
-
-y se abra a mi fuerza,
-
-de su seno brotarán
-
-torrentes de agua viva.
-
-
-
+**el agua del Señor Jesús (x2)**
   `,
 
 

@@ -33,25 +33,6 @@ de amor y de amistad.
 
 
   resumen:`
-La roca que nos salva
-
-es Cristo, nuestro Dios;
-
-lleguemos dando gracias
-
-a nuestro Redentor.
-
---- 
-
-Los cielos y la tierra
-
-aclaman al Señor:
-
-  «Ha hecho maravillas,
-
-inmenso es su amor».
-
----
 
 Unidos como hermanos,
 
@@ -60,8 +41,10 @@ venimos a tu altar;
 que llenes nuestras vidas
 
 de amor y de amistad.
+___ 
 
-  `,
+**Vamos cantando al Señor: Él es nuestra alegría. (x2)**
+`,
 
 
 

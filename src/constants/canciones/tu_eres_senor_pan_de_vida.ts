@@ -4,10 +4,10 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Tu eres, Señor, el Pan de Vida",
+  nombre: "Tu eres, Señor, el pan de vida",
 letra: `Mi Padre es quien os da verdadero Pan del cielo.
 
-Tú eres, Señor, el Pan de Vida.
+**Tú eres, Señor, el Pan de Vida.**
 
 ---
 
@@ -39,19 +39,15 @@ Mi Cuerpo recibid, entregado por vosotros.
 
 
   resumen:`
-Quien come de mi Carne, mora en Mí y Yo en él.
 
-Bebed todos de él: es el cáliz de mi Sangre.
+Quien come de este pan, vivirá eternamente.
 
----
+**Tú eres, Señor, el pan de vida.**
 
-Yo soy el Pan de Vida que ha bajado de los cielos.
+Aquel que venga a mí, no padecerá más hambre.
 
-Si no coméis mi Carne, no tendréis vida en vosotros.
+**(Coro x2)**
 
-Quien bebe de mi Sangre, tiene ya de la Vida eterna.
-
-Mi Cuerpo recibid, entregado por vosotros.
 
   `,
 

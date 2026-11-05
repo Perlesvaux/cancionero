@@ -3,7 +3,7 @@ import type {Cancion} from '../../types'
 
 export default {
 
-  nombre: "Una Espiga",
+  nombre: "Una espiga",
 letra: `
 Una espiga dorada por el sol,
 el racimo que corta el viñador,
@@ -42,19 +42,10 @@ Compartimos la misma comunión.
 
 Somos trigo del mismo sembrador,
 
-un molino la vida nos tritura con dolor.
+un molino, la vida, nos tritura con dolor.
 
-Dios nos hace Eucaristía en el amor.
+**Dios nos hace Eucaristía en el amor. (x3)**
 
----
-
-Como granos que han hecho el mismo pan,
-
-como notas que tejen un cantar,
-
-como gotas de agua que se funden en el mar,
-
-los cristianos un cuerpo formarán.
 
   `,
 
