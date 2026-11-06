@@ -322,11 +322,11 @@ nav {
   border: 1px solid var(--rule);
   border-radius: 10px;
   background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
-  box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.08),
-    0 1px 3px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /*box-shadow:*/
+  /*  0 4px 16px rgba(0, 0, 0, 0.08),*/
+  /*  0 1px 3px rgba(0, 0, 0, 0.06);*/
+  /*backdrop-filter: blur(10px);*/
+  /*-webkit-backdrop-filter: blur(10px);*/
 }
 
 nav a {
