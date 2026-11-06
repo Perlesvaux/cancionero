@@ -37,10 +37,9 @@ Antes de despedirse, si resulta oportuno, pedir al enfermo que persigne al visit
 
 ### Indicaciones importantes
 
-- Si el enfermo o su familia desean confesarse o hablar con el Padre, proporcionarles el contacto del P. Cacho.
 - Recuerda anotar los datos de la visita en las hojas de control.
-
-**Para el visitador:** Leer las páginas 48 y 49 del folleto *Visitadores de Enfermos*.
+- Si el enfermo o su familia desean confesarse o hablar con el Padre, proporcionarles el contacto del P. Cacho.
+- Leer las páginas 48 y 49 del folleto *Visitadores de Enfermos*.
 
 <div id="pasajes" popover>
 
