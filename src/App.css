@@ -614,6 +614,71 @@ blockquote cite::before {
   }
 }
 
+/* ---------- Native popovers ---------- */
+
+[popover] {
+  max-width: min(34rem, calc(100% - 2rem));
+  max-height: min(80vh, 40rem);
+  overflow: auto;
+
+  margin: auto;
+  padding: 1.25rem 1.5rem;
+
+  color: var(--fg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+
+  font: inherit;
+  line-height: var(--leading);
+
+  max-height: min(85vh, 45rem);
+  overflow: auto;
+
+  overscroll-behavior: contain;
+
+}
+
+[popover]::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------- Popover triggers ---------- */
+
+button[popovertarget] {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  text-underline-offset: 3px;
+
+  cursor: pointer;
+}
+
+button[popovertarget]:hover {
+  text-decoration-color: var(--accent);
+}
+
+button[popovertarget]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+ol,ul {
+	padding-left: 1.75rem;
+}
+
+
+
 /* ---------- Accessibility ---------- */
 
 @media (prefers-reduced-motion: reduce) {
