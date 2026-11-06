@@ -28,9 +28,11 @@ export default {
 1. Comenzar con la [Señal de la Cruz](/oraciones#senal-de-la-cruz). 
 2. Leer y reflexionar algún pasaje de la <button popovertarget="pasajes">selección</button> de textos bíblicos. 
 3. Entonar un [canto del manual](/).
-4. Una [oración del manual](/oraciones_para_enfermos).
+4. Hacer una [oración del manual](/oraciones_para_enfermos).
 
 Terminar con una oración espontánea por el enfermo y su familia.
+
+Antes de despedirse, si resulta oportuno, pedir al enfermo que persigne al visitador.
 
 ### Con Comunión
 
@@ -92,13 +94,7 @@ Administrar la Comunión diciendo:
 
 Si se considera oportuno, rezar el *Alma de Cristo, santifícame* antes de despedirse.
 
-### Sin Comunión
 
-Realizar los pasos indicados en **«Generalidades»**, adaptándolos a la situación del enfermo.
-
-No hace falta hacer una celebración extensa. ***Una lectura bíblica, un canto y una oración*** pueden ser suficientes.
-
-Antes de despedirse, si resulta oportuno, pedir al enfermo que persigne al visitador.
 
 ### Indicaciones importantes
 
