@@ -677,6 +677,10 @@ ol,ul {
 	padding-left: 1.75rem;
 }
 
+.firma {
+  text-align: right;
+}
+
 
 
 /* ---------- Accessibility ---------- */
