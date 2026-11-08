@@ -42,15 +42,15 @@ Leer y comentar uno de estos textos:
 >
 > «Gloria ... » 
 
-Mostrar la Sagrada Hostia y decir:
+- Mostrar la Sagrada Hostia y decir:
 
 > «Este es el Cordero de Dios que quita el pecado del mundo. Dichosos los invitados a la cena del Señor».
 
-Todos responden:
+- Todos responden:
 
 > «Señor, no soy digno de que entres en mi casa, pero una palabra tuya bastará para sanarme».
 
-Administrar la Comunión diciendo:
+- Administrar la Comunión diciendo:
 
 > «El Cuerpo de Cristo». Amén.
 
