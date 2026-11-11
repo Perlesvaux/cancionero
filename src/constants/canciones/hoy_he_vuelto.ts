@@ -34,7 +34,7 @@ export default {
   **Que una madre no se cansa de esperar**`,
 
 
-  resumen:`Hoy he vuelto, madre, a recordar
+  resumen:`Hoy he vuelto, Madre, a recordar
 
   Cuántas cosas dije ante tu altar
 
